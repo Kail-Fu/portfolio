@@ -1,0 +1,12 @@
+.navbar {
+    height: 30px !important;
+}
+
+.nav-item {
+    color: white;
+    padding-left: 12px;
+}
+
+.circleicon {
+    margin-right: 6px;
+}
