@@ -8,7 +8,7 @@ import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Contacts from './Contacts';
 // import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
 import Account from './Account';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -182,15 +182,15 @@ const MiniDrawer = () => {
     const handleListItemClick = (event, index) => {
         setSelectedIndex(index);
         if (index === 1) {
-            navigate('/Projects', { replace: true });
+            navigate('/portfolio/Projects', { replace: true });
         }
         else if (index === 2) {
-            navigate('/Contacts', { replace: true });
+            navigate('/portfolio/Contacts', { replace: true });
         }
         else if (index === 3) {
-            navigate('/Account', { replace: true });
+            navigate('/portfolio/Account', { replace: true });
         } else {
-            navigate('/', { replace: true });
+            navigate('/portfolio', { replace: true });
         }
         console.log(selectedIndex)
     };
@@ -304,10 +304,11 @@ const MiniDrawer = () => {
                 <Box sx={{ p: 3 }} />
                 {/* </Box> */}
                 <Routes>
-                    <Route path="/" element={<Explorer handleListItemClick={handleListItemClick} />} />
-                    <Route path="/Projects" element={<Projects />} />
-                    <Route path="/Contacts" element={<Contacts />} />
-                    <Route path="/Account" element={<Account />} />
+                    <Route path="/" element={<Navigate replace to="/portfolio" />} />
+                    <Route path="/portfolio" element={<Explorer handleListItemClick={handleListItemClick} />} />
+                    <Route path="/portfolio/Projects" element={<Projects />} />
+                    <Route path="/portfolio/Contacts" element={<Contacts />} />
+                    <Route path="/portfolio/Account" element={<Account />} />
                 </Routes>
             </Box>
         </Box >
