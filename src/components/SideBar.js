@@ -3,10 +3,12 @@ import { styled, useTheme } from '@mui/material/styles';
 // import { StyledSubTabs } from "../styles/SubTabs.styles";
 // import { Link } from 'react-router-dom';
 import Explorer from './Explorer';
+import MdIcon from '../images/MdIcon';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Contacts from './Contacts';
+import Projects from './Projects';
 // import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
 import Account from './Account';
@@ -160,10 +162,6 @@ const ListItem = withStyles({
     selected: {}
 })(MuiListItem);
 
-const Projects = () => {
-    return <h1> 777 </h1>;
-};
-
 
 
 
@@ -199,7 +197,7 @@ const MiniDrawer = () => {
     const classes = useStyles();
 
     return (
-        <Box sx={{ display: 'flex', minHeight: "50rem", backgroundColor: "#222222" }}>
+        <Box sx={{ display: 'flex', minHeight: "100vh", backgroundColor: "#222222" }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
@@ -264,7 +262,7 @@ const MiniDrawer = () => {
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
-                                mt: 62
+                                mt: '65vh'
                             }} >
                             <ListItemIcon
                                 sx={{
@@ -296,7 +294,7 @@ const MiniDrawer = () => {
                     <StyledSubTabs value={selectedIndex} onChange={handleListItemClick} aria-label="ant example"
                     >
                         <Tab disableRipple icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
-                        <Tab disableRipple icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.js</span>} value={1} />
+                        <Tab disableRipple icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.md</span>} value={1} />
                         <Tab disableRipple icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
                         <Tab disableRipple icon={<HtmlIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
                     </StyledSubTabs>
