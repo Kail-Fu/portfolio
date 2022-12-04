@@ -1,0 +1,136 @@
+.code {
+    counter-reset: line;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.line::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.code a {
+    color: rgba(235, 72, 18, 0.906);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.code a:hover {
+    text-decoration: underline;
+}
+
+.className {
+    color: rgba(235, 72, 18, 0.906);
+    font-size: 1.2rem;
+}
+
+.whiteText {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .code {
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container>* {
+    flex: 1;
+}
+
+.container>div:first-child {
+    border-right: 1px solid var(--accent-color);
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.form input,
+.form textarea {
+    font-family: 'JetBrains Mono';
+    margin-bottom: 1.5rem;
+    background: var(--article-bg);
+    color: var(--text-color);
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+.form button {
+    background: var(--accent-color);
+    color: var(--main-bg);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: block;
+    }
+
+    .container>div:first-child {
+        border-right: none;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        display: block;
+    }
+
+    .form input {
+        font-size: 0.85rem;
+    }
+}

@@ -49,53 +49,8 @@ const Sonnet = () => {
 
 
 
-const Account = ({ selectedIndex, setSelectedIndex }) => {
+const Account = () => {
     return <h1>BIUYAODSVFYU</h1>
-
-    // handleSelect(key) {
-    //     if (key === 1)
-    //         this.setState({ heading: "Log in" })
-    //     else
-    //         this.setState({ heading: "Sign up" })
-    // }
-    // const navigate = useNavigate();
-    // function changeTab(eventKey) {
-    //     setSelectedIndex(eventKey);
-    //     if (eventKey === 1) {
-    //         navigate('/Projects', { replace: true });
-    //     }
-    //     else if (eventKey === 2) {
-    //         navigate('/Mail', { replace: true });
-    //     }
-    //     else if (eventKey === 3) {
-    //         navigate('/Account', { replace: true });
-    //     } else {
-    //         navigate('/', { replace: true });
-    //     }
-    //     console.log(selectedIndex)
-    // };
-
-    // return <Box sx={{ flexGrow: 1, pt: 3, ml: -1.5 }}>
-    //     <Tabs
-    //         defaultActiveKey={0}
-    //         id="justify-tab-example"
-    //         className="mb-3"
-    //         onClick={() => changeTab()}
-    //     >
-    //         <Tab eventKey={0} title="Home">
-    //             <Sonnet />
-    //         </Tab>
-    //         <Tab eventKey={1} title="Profile">
-    //             <Sonnet />
-    //         </Tab>
-    //         <Tab eventKey={2} title="Contact">
-    //             <Sonnet />
-    //         </Tab>
-    //         <Tab eventKey={3} title="Account">
-    //             <Sonnet />
-    //         </Tab>
-    //     </Tabs>
-    // </Box>;
 };
 
 export default Account;

@@ -28,9 +28,9 @@ function TopBar() {
                 <Nav.Item>Help</Nav.Item>
                 <Nav.Item style={{ marginLeft: '300px' }}>Cool Raven - Visual Studio Code</Nav.Item>
             </Nav>
-            <CircleIcon className='circleicon' sx={{ color: yellow[800], fontSize: 20 }} />
-            <CircleIcon className='circleicon' sx={{ color: green[500], fontSize: 20 }} />
-            <CircleIcon className='circleicon' sx={{ color: red[500], fontSize: 20 }} />
+            <CircleIcon className='circleicon' sx={{ color: yellow[800], fontSize: 17 }} />
+            <CircleIcon className='circleicon' sx={{ color: green[500], fontSize: 17 }} />
+            <CircleIcon className='circleicon' sx={{ color: red[500], fontSize: 17 }} />
         </Navbar >
     );
 }

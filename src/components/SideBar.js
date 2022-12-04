@@ -5,6 +5,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
+import Contacts from './Contacts';
 // import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import Account from './Account';
@@ -18,9 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MuiListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import TopBar from './TopBar';
 import { grey } from '@mui/material/colors';
@@ -50,18 +49,16 @@ const AntTabs = styled(Tabs)({
 
 const StyledSubTabs = styled(Tabs)`
   .MuiButtonBase-root.MuiTab-root {
-    background: #8d8d8d;
+    background: #5b5b5b;
     border-radius: 8px 8px 0 0;
     border-bottom: none; 
 
   }
 
   .MuiButtonBase-root.MuiTab-root.Mui-selected {
-    border-top: 9px solid #383838;
-    border-left: 4px solid #383838;;
-    border-right: 4px solid #383838;;;
+
     border-bottom: none;
-    background: #5b5b5b; 
+    background: #222222; 
     z-index: 10;
   }
 
@@ -153,6 +150,7 @@ const ListItem = withStyles({
             }
         },
         "&:hover": {
+            backgroundColor: '#383838',
             "& .MuiListItemIcon-root": {
                 color: "white"
             }
@@ -169,24 +167,11 @@ const Projects = () => {
     return <h1> 777 </h1>;
 };
 
-const Email = () => {
-    return <h1> Hi </h1>;
-};
 
 
 
 const MiniDrawer = () => {
-    // const navigate = useNavigate();
 
-    // const navigateToContacts = () => {
-    //     // 👇️ navigate to /contacts
-    //     navigate('/contacts');
-    // };
-
-    // const navigateHome = () => {
-    //     // 👇️ navigate to /
-    //     navigate('/');
-    // };
 
     const [value, setValue] = React.useState('1');
 
@@ -203,7 +188,7 @@ const MiniDrawer = () => {
             navigate('/Projects', { replace: true });
         }
         else if (index === 2) {
-            navigate('/Mail', { replace: true });
+            navigate('/Contacts', { replace: true });
         }
         else if (index === 3) {
             navigate('/Account', { replace: true });
@@ -217,7 +202,7 @@ const MiniDrawer = () => {
     const classes = useStyles();
 
     return (
-        <Box sx={{ display: 'flex', minHeight: "1000px", backgroundColor: "#5b5b5b" }}>
+        <Box sx={{ display: 'flex', minHeight: "1000px", backgroundColor: "#222222" }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
@@ -229,7 +214,7 @@ const MiniDrawer = () => {
             }}>
                 <div className={classes.root}>
                     <List sx={{ pt: 5 }} component="nav" aria-label="main mailbox folders">
-                        <ListItem key={"Explorer"} button selected={selectedIndex === 0}
+                        <ListItem key={"Explorer"} button disableRipple selected={selectedIndex === 0}
                             onClick={(event) => handleListItemClick(event, 0)} disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -245,7 +230,7 @@ const MiniDrawer = () => {
                             ><ExplorerIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Projects"} button selected={selectedIndex === 1}
+                        <ListItem key={"Projects"} button disableRipple selected={selectedIndex === 1}
                             onClick={(event) => handleListItemClick(event, 1)} disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -261,7 +246,7 @@ const MiniDrawer = () => {
                             ><ProjectsIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Mail"} button selected={selectedIndex === 2}
+                        <ListItem key={"Mail"} button disableRipple selected={selectedIndex === 2}
                             onClick={(event) => handleListItemClick(event, 2)} disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -277,7 +262,7 @@ const MiniDrawer = () => {
                             ><MailIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Account"} button selected={selectedIndex === 3}
+                        <ListItem key={"Account"} button disableRipple selected={selectedIndex === 3}
                             onClick={(event) => handleListItemClick(event, 3)} disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -294,13 +279,6 @@ const MiniDrawer = () => {
                             ><AccountIcon />
                             </ListItemIcon>
                         </ListItem>
-                        {/* 
-                        <Routes>
-                            <Route path="/contacts" element={<Contacts />} />
-                            <Route path="/" element={<Home />} />
-                            <Route path="/contacts" element={<Contacts />} />
-                            <Route path="/" element={<Home />} />
-                        </Routes> */}
                     </List>
                 </div>
             </Drawer>
@@ -317,13 +295,13 @@ const MiniDrawer = () => {
                         <StyledTab label="Connections" value={2} />
                         <StyledTab label="Connections" value={3} />
                     </StyledTabs> */}
-                <Box sx={{ bgcolor: '#8d8d8d', mt: -1 }}>
+                <Box sx={{ bgcolor: '#5b5b5b', mt: -1 }}>
                     <StyledSubTabs value={selectedIndex} onChange={handleListItemClick} aria-label="ant example"
                     >
-                        <Tab icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'black' }}>home.jsx</span>} value={0} />
-                        <Tab icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'black' }}>project.js</span>} value={1} />
-                        <Tab icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'black' }}>contact.css</span>} value={2} />
-                        <Tab icon={<HtmlIcon />} iconPosition="start" label={<span style={{ color: 'black' }}>about.html</span>} value={3} />
+                        <Tab disableRipple icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
+                        <Tab disableRipple icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.js</span>} value={1} />
+                        <Tab disableRipple icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
+                        <Tab disableRipple icon={<HtmlIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
                     </StyledSubTabs>
                 </Box>
                 <Box sx={{ p: 3 }} />
@@ -331,7 +309,7 @@ const MiniDrawer = () => {
                 <Routes>
                     <Route path="/" element={<Explorer />} />
                     <Route path="/Projects" element={<Projects />} />
-                    <Route path="/Mail" element={<Email />} />
+                    <Route path="/Contacts" element={<Contacts />} />
                     <Route path="/Account" element={<Account />} />
                 </Routes>
             </Box>
@@ -340,11 +318,3 @@ const MiniDrawer = () => {
 }
 
 export default MiniDrawer
-
-// function Home() {
-//     return <h2>Home</h2>;
-// }
-
-// function Contacts() {
-//     return <h2>Contacts</h2>;
-// }
