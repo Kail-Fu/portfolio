@@ -57,11 +57,11 @@ const StyledSubTabs = styled(Tabs)`
   }
 
   .MuiButtonBase-root.MuiTab-root.Mui-selected {
-    border-top: 9px solid black;
-    border-left: 4px solid black;;
-    border-right: 4px solid black;;;
+    border-top: 9px solid #383838;
+    border-left: 4px solid #383838;;
+    border-right: 4px solid #383838;;;
     border-bottom: none;
-    background: #3a3a3a; 
+    background: #5b5b5b; 
     z-index: 10;
   }
 
@@ -217,7 +217,7 @@ const MiniDrawer = () => {
     const classes = useStyles();
 
     return (
-        <Box sx={{ display: 'flex', minHeight: "1000px", backgroundColor: "#3a3a3a" }}>
+        <Box sx={{ display: 'flex', minHeight: "1000px", backgroundColor: "#5b5b5b" }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
