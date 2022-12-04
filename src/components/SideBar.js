@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 // import { StyledSubTabs } from "../styles/SubTabs.styles";
 // import { Link } from 'react-router-dom';
+import Explorer from './Explorer';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
@@ -159,10 +160,6 @@ const ListItem = withStyles({
     selected: {}
 })(MuiListItem);
 
-const Explorer = () => {
-    return <h1> 666 </h1>;
-};
-
 const Projects = () => {
     return <h1> 777 </h1>;
 };
@@ -202,7 +199,7 @@ const MiniDrawer = () => {
     const classes = useStyles();
 
     return (
-        <Box sx={{ display: 'flex', minHeight: "1000px", backgroundColor: "#222222" }}>
+        <Box sx={{ display: 'flex', minHeight: "50rem", backgroundColor: "#222222" }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
@@ -307,7 +304,7 @@ const MiniDrawer = () => {
                 <Box sx={{ p: 3 }} />
                 {/* </Box> */}
                 <Routes>
-                    <Route path="/" element={<Explorer />} />
+                    <Route path="/" element={<Explorer handleListItemClick={handleListItemClick} />} />
                     <Route path="/Projects" element={<Projects />} />
                     <Route path="/Contacts" element={<Contacts />} />
                     <Route path="/Account" element={<Account />} />

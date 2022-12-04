@@ -60,7 +60,7 @@ const Contacts = () => {
                         <span className={styles.whiteText}>;</span>
                     </p>
                     <p className={styles.line} key={0}>
-                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>My Fav Cartoon:{' '}</span>
+                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>My Fav Anime:{' '}</span>
                         <a href={"https://www.adultswim.com/videos/rick-and-morty"} target="_blank" rel="noopener noreferrer">
                             {"Rick and Morty"}
                         </a>
@@ -71,8 +71,8 @@ const Contacts = () => {
                     </p>
                 </div>
             </Box>
-            <Box align="left" pl={6} pr={6} sx={{ width: '45%', borderLeft: 4, borderColor: "#eb4812e7" }}>
-                <h3 style={{ color: 'white' }}>Or Fill The Form</h3>
+            <Box align="left" pl={6} pr={6} sx={{ width: '45%', borderLeft: 4, borderColor: "rgb(38,138,200)" }}>
+                <h3 style={{ color: 'white' }}>Or Send Me Here</h3>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <TextField
@@ -123,7 +123,7 @@ const Contacts = () => {
                     </Grid>
                     <Grid item xs={5}>
                         <Button
-                            style={{ width: "100%", color: "white", backgroundColor: "#eb4812e7" }}
+                            style={{ width: "100%", color: "white", backgroundColor: "#268ac8" }}
                             variant="contained"
                         >
                             Send Message
