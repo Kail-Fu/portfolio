@@ -3,7 +3,10 @@ import { Button, Stack } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState, useEffect } from "react";
 import Meeseeks from '../images/Meeseeks.png'
-const words = ["Product Manager", "Full Stack Developer", "Web Designer", "Magician", "Product Manager", "Full Stack Developer", "Web Designer", "Magician", "Product Manager", "Full Stack Developer", "Web Designer", "Magician", "Product Manager", "Full Stack Developer", "Web Designer", "Magician", "Product Manager", "Full Stack Developer", "Web Designer", "Magician"];
+var words = ["Product Manager", "Full Stack Developer", "Web Designer", "Magician"];
+for (let i = 0; i < 10; i++) {
+    words = words.concat(words)
+}
 
 
 const Explorer = (props) => {
@@ -40,12 +43,12 @@ const Explorer = (props) => {
 
 
     return <Stack direction="row" spacing={1}>
-        <Box textAlign={'left'} ml={10} mt={15} width={'40%'}>
-            <h1 style={{ color: 'white', fontSize: "4rem" }}>Jonathan Donut</h1>
-            <h3 style={{ color: 'white', marginTop: '2rem' }}>
-                I am {`${words[index].substring(0, subIndex)}${""}`}
-            </h3>
-            <Stack direction="row" spacing={19} marginTop={"3rem"}>
+        <Box textAlign={'left'} ml={10} mt={6} width={'70%'}>
+            <h1 style={{ color: 'white', fontSize: "9rem" }}>Cool Raven</h1>
+            <h2 style={{ color: 'white', marginTop: '0rem' }}>
+                I am a {`${words[index].substring(0, subIndex)}${""}`}
+            </h2>
+            <Stack direction="row" spacing={19} marginTop={"8rem"}>
                 <Button onClick={(event) => props.handleListItemClick(event, 1)} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>View Works</Button>
                 <Button onClick={(event) => props.handleListItemClick(event, 2)} variant="outlined" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
                     Contact Me
@@ -54,7 +57,7 @@ const Explorer = (props) => {
 
         </Box >
 
-        <Box pl={25}>
+        <Box>
             <img src={Meeseeks} alt="Meeseeks" />
         </Box>
     </Stack>

@@ -306,7 +306,7 @@ const MiniDrawer = () => {
                     <Route path="/portfolio" element={<Explorer handleListItemClick={handleListItemClick} />} />
                     <Route path="/portfolio/Projects" element={<Projects />} />
                     <Route path="/portfolio/Contacts" element={<Contacts />} />
-                    <Route path="/portfolio/Account" element={<Account />} />
+                    <Route path="/portfolio/Account" element={<Account handleListItemClick={handleListItemClick} />} />
                 </Routes>
             </Box>
         </Box >
