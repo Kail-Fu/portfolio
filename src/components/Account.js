@@ -27,12 +27,10 @@ const Account = (props) => {
             I have plenty of experience improving the interaction between technology and people.
             I interned at Amazon in Seattle in 2021.
             I designed and implemented the scheduled delivery of customized recommendations on Echo devices.
-            It is now helping 80 million
-            <Link underline='none' target="_blank"
+            It is now helping 80 million <Link underline='none' target="_blank"
                 href="https://www.amazon.com/b?node=21576558011&ref=pe_alxhub_aucc_en_us_IC_NV_HUB_HP">
                 Alexa
-            </Link>
-            users in Asia, NA, and EU to learn voice commands at a more suitable time.
+            </Link> users in Asia, NA, and EU to learn voice commands at a more suitable time.
         </Typography>
         <Typography inline width={"112vh"} variant="body1" align="left" mt={2} fontSize={22} color="#DADADA">
             I interned at Meta in Menlo Park in 2022.
