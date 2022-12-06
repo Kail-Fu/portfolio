@@ -15,12 +15,6 @@ import Account from './Account';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MuiListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
@@ -165,33 +159,24 @@ const ListItem = withStyles({
 
 
 
-const MiniDrawer = () => {
-
-
-    const [value, setValue] = React.useState('1');
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
-
-
-    const [selectedIndex, setSelectedIndex] = React.useState(0);
+const MiniDrawer = (props) => {
+    // const [selectedIndex, setSelectedIndex] = React.useState(0);
     const navigate = useNavigate();
-    const handleListItemClick = (event, index) => {
-        setSelectedIndex(index);
-        if (index === 1) {
-            navigate('/portfolio/Projects', { replace: true });
-        }
-        else if (index === 2) {
-            navigate('/portfolio/Contacts', { replace: true });
-        }
-        else if (index === 3) {
-            navigate('/portfolio/Account', { replace: true });
-        } else {
-            navigate('/portfolio', { replace: true });
-        }
-        console.log(selectedIndex)
-    };
+    // const handleListItemClick = (event, index) => {
+    //     setSelectedIndex(index);
+    //     if (index === 1) {
+    //         navigate('/portfolio/Projects', { replace: true });
+    //     }
+    //     else if (index === 2) {
+    //         navigate('/portfolio/Contacts', { replace: true });
+    //     }
+    //     else if (index === 3) {
+    //         navigate('/portfolio/Account', { replace: true });
+    //     } else {
+    //         navigate('/portfolio', { replace: true });
+    //     }
+    //     console.log(selectedIndex)
+    // };
 
     const [open, setOpen] = React.useState(false);
     const classes = useStyles();
@@ -209,8 +194,9 @@ const MiniDrawer = () => {
             }}>
                 <div className={classes.root}>
                     <List sx={{ pt: 5 }} component="nav" aria-label="main mailbox folders">
-                        <ListItem key={"Explorer"} button disableRipple selected={selectedIndex === 0}
-                            onClick={(event) => handleListItemClick(event, 0)} disablePadding sx={{
+                        <ListItem key={"Explorer"} button disableRipple selected={props.pageIndex === 0}
+                            onClick={() => navigate('/portfolio', { replace: true })}
+                            disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
@@ -225,8 +211,9 @@ const MiniDrawer = () => {
                             ><ExplorerIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Projects"} button disableRipple selected={selectedIndex === 1}
-                            onClick={(event) => handleListItemClick(event, 1)} disablePadding sx={{
+                        <ListItem key={"Projects"} button disableRipple selected={props.pageIndex === 1}
+                            onClick={() => navigate('/portfolio/Projects', { replace: true })}
+                            disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
@@ -241,8 +228,9 @@ const MiniDrawer = () => {
                             ><ProjectsIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Mail"} button disableRipple selected={selectedIndex === 2}
-                            onClick={(event) => handleListItemClick(event, 2)} disablePadding sx={{
+                        <ListItem key={"Mail"} button disableRipple selected={props.pageIndex === 2}
+                            onClick={() => navigate('/portfolio/Contacts', { replace: true })}
+                            disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
@@ -257,8 +245,10 @@ const MiniDrawer = () => {
                             ><MailIcon />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Account"} button disableRipple selected={selectedIndex === 3}
-                            onClick={(event) => handleListItemClick(event, 3)} disablePadding sx={{
+                        <ListItem key={"Account"} button disableRipple selected={props.pageIndex === 3}
+                            onClick={() => navigate('/portfolio/Account', { replace: true })}
+                            // onClick={(event) => handleListItemClick(event, 3)} 
+                            disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
@@ -291,23 +281,25 @@ const MiniDrawer = () => {
                         <StyledTab label="Connections" value={3} />
                     </StyledTabs> */}
                 <Box sx={{ bgcolor: '#5b5b5b', mt: -1 }}>
-                    <StyledSubTabs value={selectedIndex} onChange={handleListItemClick} aria-label="ant example"
+                    <StyledSubTabs value={props.pageIndex}
+                        aria-label="ant example"
                     >
-                        <Tab disableRipple icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
-                        <Tab disableRipple icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.md</span>} value={1} />
-                        <Tab disableRipple icon={<CssIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
-                        <Tab disableRipple icon={<HtmlIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
+                        <Tab disableRipple onClick={() => navigate('/portfolio', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
+                        <Tab disableRipple onClick={() => navigate('/portfolio/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.md</span>} value={1} />
+                        <Tab disableRipple icon={<CssIcon />} onClick={() => navigate('/portfolio/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
+                        <Tab disableRipple icon={<HtmlIcon />} onClick={() => navigate('/portfolio/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
                     </StyledSubTabs>
                 </Box>
                 <Box sx={{ p: 3 }} />
+                <props.component />
                 {/* </Box> */}
-                <Routes>
+                {/* <Routes>
                     <Route path="/" element={<Navigate replace to="/portfolio" />} />
                     <Route path="/portfolio" element={<Explorer handleListItemClick={handleListItemClick} />} />
                     <Route path="/portfolio/Projects" element={<Projects />} />
                     <Route path="/portfolio/Contacts" element={<Contacts />} />
                     <Route path="/portfolio/Account" element={<Account handleListItemClick={handleListItemClick} />} />
-                </Routes>
+                </Routes> */}
             </Box>
         </Box >
     );

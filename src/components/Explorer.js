@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Button, Stack } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import Meeseeks from '../images/Meeseeks.png'
+import MiniDrawer from './SideBar';
 var words = ["Product Manager", "Full Stack Developer", "Web Designer", "Magician"];
 for (let i = 0; i < 10; i++) {
     words = words.concat(words)
 }
 
 
-const Explorer = (props) => {
+const ExplorerBox = (props) => {
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [reverse, setReverse] = useState(false);
@@ -84,5 +85,9 @@ const Explorer = (props) => {
     //     </div>
     // </>
 };
+
+const Explorer = () => {
+    return <MiniDrawer pageIndex={0} component={ExplorerBox} />
+}
 
 export default Explorer;

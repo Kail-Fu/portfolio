@@ -7,13 +7,14 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import MiniDrawer from './SideBar';
 
 const useStyles = makeStyles((theme) => ({
     input: {
         background: "gray"
     }
 }));
-const Contacts = () => {
+const ContactsBox = () => {
 
     const classes = useStyles();
     return <div>
@@ -186,6 +187,10 @@ const Contacts = () => {
         </div>
     </div>
 };
+
+const Contacts = () => {
+    return <MiniDrawer pageIndex={2} component={ContactsBox} />
+}
 
 export default Contacts;
 

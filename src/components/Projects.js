@@ -1,7 +1,8 @@
 import { Box } from "@mui/system"
 import '../styles/Projects.css'
+import MiniDrawer from "./SideBar"
 
-const Projects = (props) => {
+const ProjectsBox = () => {
     return <Box color={"white"} textAlign={"left"} ml={10}><h1 id="🧪-projects">🧪 Projects</h1>
         <h2 id="moonshot-🔗"><a href="https://fakecat016.github.io/iterative-design/">Moonshot</a> 🔗</h2>
         <ul>
@@ -22,7 +23,7 @@ const Projects = (props) => {
                 <ol>
                     <li><p>Cannot find the apartment location, either because of map navigation or wrong address </p>
                     </li>
-                    <li><p>Don’t know how to enter the apartment, which includes finding parking lot and entrance. </p>
+                    <li><p>Don't know how to enter the apartment, which includes finding parking lot and entrance. </p>
                     </li>
                     <li><p>Cannot enter the apartment due to guard or lock</p>
                     </li>
@@ -83,6 +84,10 @@ const Projects = (props) => {
         <Box height={'8rem'}></Box>
 
     </Box>
+}
+
+const Projects = () => {
+    return <MiniDrawer pageIndex={1} component={ProjectsBox} />
 }
 
 export default Projects

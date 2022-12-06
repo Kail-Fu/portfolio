@@ -6,9 +6,10 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import { Button, Stack } from '@mui/material';
 import Link from '@mui/material/Link';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import MiniDrawer from './SideBar';
 // import Stack from '@mui/material';
 
-const Account = (props) => {
+const AccountBox = (props) => {
     return <Stack direction="column" display="flex" alignItems="center">
         <Box display="flex" justifyContent="center">
             <Stack direction="row" spacing={2}>
@@ -48,5 +49,9 @@ const Account = (props) => {
 
     </Stack >
 };
+
+const Account = () => {
+    return <MiniDrawer pageIndex={3} component={AccountBox} />
+}
 
 export default Account;
