@@ -285,7 +285,7 @@ const MiniDrawer = (props) => {
                         aria-label="ant example"
                     >
                         <Tab disableRipple onClick={() => navigate('/portfolio', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
-                        <Tab disableRipple onClick={() => navigate('/portfolio/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.md</span>} value={1} />
+                        <Tab disableRipple onClick={() => navigate('/portfolio/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>projects.md</span>} value={1} />
                         <Tab disableRipple icon={<CssIcon />} onClick={() => navigate('/portfolio/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
                         <Tab disableRipple icon={<HtmlIcon />} onClick={() => navigate('/portfolio/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
                     </StyledSubTabs>
