@@ -10,7 +10,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Contacts from './Contacts';
 import Projects from './Projects';
 // import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Account from './Account';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';

@@ -13,7 +13,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Contacts from './components/Contacts';
 import Projects from './components/Projects';
 // import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate, HashRouter } from 'react-router-dom';
 import Account from './components/Account';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -38,6 +38,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import Tabs from '@mui/material/Tabs';
 import MuiTabs from "@material-ui/core/Tabs";
 import { TabsContext } from '@mui/base';
+
 
 const App = () => {
   // const [selectedIndex, setSelectedIndex] = React.useState(0);
