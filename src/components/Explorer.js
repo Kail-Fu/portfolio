@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button, Stack } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState, useEffect, Component } from "react";
+import { useNavigate } from 'react-router-dom';
 import Meeseeks from '../images/Meeseeks.png'
 import MiniDrawer from './SideBar';
 var words = ["Product Manager", "Full Stack Developer", "Web Designer", "Magician"];
@@ -14,6 +15,7 @@ const ExplorerBox = (props) => {
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [reverse, setReverse] = useState(false);
+    const navigate = useNavigate();
     useEffect(() => {
         if (index === words.length - 1 && subIndex === words[index].length) {
             return;
@@ -50,8 +52,8 @@ const ExplorerBox = (props) => {
                 I am a {`${words[index].substring(0, subIndex)}${""}`}
             </h2>
             <Stack direction="row" spacing={19} marginTop={"8rem"}>
-                <Button onClick={(event) => props.handleListItemClick(event, 1)} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>View Works</Button>
-                <Button onClick={(event) => props.handleListItemClick(event, 2)} variant="outlined" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
+                <Button onClick={() => navigate('/portfolio/Projects', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>View Works</Button>
+                <Button onClick={() => navigate('/portfolio/Contacts', { replace: true })} variant="outlined" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
                     Contact Me
                 </Button>
             </Stack>

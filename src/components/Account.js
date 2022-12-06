@@ -7,9 +7,9 @@ import { Button, Stack } from '@mui/material';
 import Link from '@mui/material/Link';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import MiniDrawer from './SideBar';
-// import Stack from '@mui/material';
 
 const AccountBox = (props) => {
+    const navigate = useNavigate();
     return <Stack direction="column" display="flex" alignItems="center">
         <Box display="flex" justifyContent="center">
             <Stack direction="row" spacing={2}>
@@ -43,7 +43,7 @@ const AccountBox = (props) => {
                 Portal
             </Link> users from being targeted advertised by third parties
         </Typography>
-        <Box mt={4}><Button onClick={(event) => props.handleListItemClick(event, 2)} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
+        <Box mt={4}><Button onClick={() => navigate('/portfolio/Contacts', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
             Contact Me
         </Button></Box>
 
