@@ -13,7 +13,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Contacts from './components/Contacts';
 import Projects from './components/Projects';
 // import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate, HashRouter } from 'react-router-dom';
+import { Routes, Route, Link, useNavigate, Navigate, HashRouter } from 'react-router-dom';
 import Account from './components/Account';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -46,16 +46,16 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         {/* <MiniDrawer setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} ></MiniDrawer> */}
-        <Routes basename="/portfolio">
-          <Route path="/" element={<Navigate replace to="/portfolio" />} />
-          <Route path="/portfolio" element={<Explorer />} />
-          <Route path="/portfolio/Projects" element={<Projects />} />
-          <Route path="/portfolio/Contacts" element={<Contacts />} />
-          <Route path="/portfolio/Account" element={<Account />} />
+        <Routes>
+          {/* <Route path="/" element={<Navigate replace to="/portfolio" />} /> */}
+          <Route path="/" element={<Explorer />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Account" element={<Account />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 };

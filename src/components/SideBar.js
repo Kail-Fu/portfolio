@@ -195,7 +195,7 @@ const MiniDrawer = (props) => {
                 <div className={classes.root}>
                     <List sx={{ pt: 5 }} component="nav" aria-label="main mailbox folders">
                         <ListItem key={"Explorer"} button disableRipple selected={props.pageIndex === 0}
-                            onClick={() => navigate('/portfolio', { replace: true })}
+                            onClick={() => navigate('/', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -212,7 +212,7 @@ const MiniDrawer = (props) => {
                             </ListItemIcon>
                         </ListItem>
                         <ListItem key={"Projects"} button disableRipple selected={props.pageIndex === 1}
-                            onClick={() => navigate('/portfolio/Projects', { replace: true })}
+                            onClick={() => navigate('/Projects', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -229,7 +229,7 @@ const MiniDrawer = (props) => {
                             </ListItemIcon>
                         </ListItem>
                         <ListItem key={"Mail"} button disableRipple selected={props.pageIndex === 2}
-                            onClick={() => navigate('/portfolio/Contacts', { replace: true })}
+                            onClick={() => navigate('/Contacts', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -246,7 +246,7 @@ const MiniDrawer = (props) => {
                             </ListItemIcon>
                         </ListItem>
                         <ListItem key={"Account"} button disableRipple selected={props.pageIndex === 3}
-                            onClick={() => navigate('/portfolio/Account', { replace: true })}
+                            onClick={() => navigate('/Account', { replace: true })}
                             // onClick={(event) => handleListItemClick(event, 3)} 
                             disablePadding sx={{
                                 minHeight: 48,
@@ -284,10 +284,10 @@ const MiniDrawer = (props) => {
                     <StyledSubTabs value={props.pageIndex}
                         aria-label="ant example"
                     >
-                        <Tab disableRipple onClick={() => navigate('/portfolio', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
-                        <Tab disableRipple onClick={() => navigate('/portfolio/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>projects.md</span>} value={1} />
-                        <Tab disableRipple icon={<CssIcon />} onClick={() => navigate('/portfolio/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
-                        <Tab disableRipple icon={<HtmlIcon />} onClick={() => navigate('/portfolio/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
+                        <Tab disableRipple onClick={() => navigate('/', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>home.jsx</span>} value={0} />
+                        <Tab disableRipple onClick={() => navigate('/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white' }}>project.md</span>} value={1} />
+                        <Tab disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>contact.css</span>} value={2} />
+                        <Tab disableRipple icon={<HtmlIcon />} onClick={() => navigate('/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white' }}>about.html</span>} value={3} />
                     </StyledSubTabs>
                 </Box>
                 <Box sx={{ p: 3 }} />
