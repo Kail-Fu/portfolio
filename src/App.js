@@ -314,7 +314,7 @@ const App = () => {
     <div className="App">
       <Router>
         {/* <MiniDrawer setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} ></MiniDrawer> */}
-        <Routes>
+        <Routes basename="/portfolio">
           <Route path="/" element={<Navigate replace to="/portfolio" />} />
           <Route path="/portfolio" element={<Explorer />} />
           <Route path="/portfolio/Projects" element={<Projects />} />
