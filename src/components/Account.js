@@ -43,7 +43,7 @@ const AccountBox = (props) => {
                 Portal
             </Link> users from being targeted advertised by third parties
         </Typography>
-        <Box mt={4}><Button onClick={() => navigate('/portfolio/Contacts', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
+        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
             Contact Me
         </Button></Box>
 

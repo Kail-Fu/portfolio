@@ -52,8 +52,8 @@ const ExplorerBox = (props) => {
                 I am a {`${words[index].substring(0, subIndex)}${""}`}
             </h2>
             <Stack direction="row" spacing={19} marginTop={"8rem"}>
-                <Button onClick={() => navigate('/portfolio/Projects', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>View Works</Button>
-                <Button onClick={() => navigate('/portfolio/Contacts', { replace: true })} variant="outlined" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
+                <Button onClick={() => navigate('/Projects', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>View Works</Button>
+                <Button onClick={() => navigate('/Contacts', { replace: true })} variant="outlined" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
                     Contact Me
                 </Button>
             </Stack>
