@@ -41,7 +41,7 @@ const ProjectsBox = () => {
             <li><p><strong>Conclusion</strong> - My biggest takeaway from the project is the product design skills and user sympathy. I better understood couriers&#39; painpoints, which helped me in the following interviews.</p>
             </li>
         </ul>
-        <h2 id="pokemon-team-builder-🔗"><a href target="_blank" rel="noopener noreferrer">Pokemon Team Builder</a> 🔗</h2>
+        <h2 id="pokemon-team-builder-🔗"><a href="https://coolraven222.github.io/dev/" target="_blank" rel="noopener noreferrer">Pokemon Team Builder</a> 🔗</h2>
         <ul>
             <li><p><strong>Context/Problem</strong> - To hone my interactive design skills, I created a website that you can build your Pokemon team by filtering, sorting, and managing shopping cart. </p>
             </li>
@@ -59,9 +59,9 @@ const ProjectsBox = () => {
             <li><p><strong>Conclusion</strong> - Through this project, I learned how to design interactive websites with high usability.</p>
             </li>
         </ul>
-        <h2 id="redisign-culpa-🔗"><a href="https://coolraven222.github.io/1300hw2/">Redisign CULPA</a> 🔗</h2>
+        <h2 id="redisign-culpa-🔗"><a href="https://coolraven222.github.io/1300hw2/" target="_blank" rel="noopener noreferrer">Redisign CULPA</a> 🔗</h2>
         <ul>
-            <li><p><strong>Context/Problem</strong> - <a href="https://culpa.app/prof/12697">CULPA</a> is a website for Columbia students to rate their professors. It displays information in an unintuitive way that lacks usability and accessibility. I decided to redesign the website to save Columbia students. 😁</p>
+            <li><p><strong>Context/Problem</strong> - <a href="https://culpa.app/prof/12697" target="_blank" rel="noopener noreferrer">CULPA</a> is a website for Columbia students to rate their professors. It displays information in an unintuitive way that lacks usability and accessibility. I decided to redesign the website to save Columbia students. 😁</p>
             </li>
             <li><p><strong>Research/Feedback</strong>- I interviewd Columbia students and asked their feedback on the website. In general, old CULPA has</p>
                 <ul>
