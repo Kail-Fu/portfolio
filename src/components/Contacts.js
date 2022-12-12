@@ -60,13 +60,6 @@ const ContactsBox = () => {
                         </a>
                         <span className={styles.whiteText}>;</span>
                     </p>
-                    <p className={styles.line} key={0}>
-                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>My Fav Anime:{' '}</span>
-                        <a href={"https://www.adultswim.com/videos/rick-and-morty"} target="_blank" rel="noopener noreferrer">
-                            {"Rick and Morty"}
-                        </a>
-                        <span className={styles.whiteText}>;</span>
-                    </p>
                     <p className={styles.line}>
                         <span className={styles.className}>{"}"}</span>
                     </p>

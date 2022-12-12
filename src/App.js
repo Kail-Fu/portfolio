@@ -29,7 +29,7 @@ import MailIcon from './images/MailIcon';
 import CssIcon from './images/CssIcon';
 import HtmlIcon from './images/HtmlIcon';
 import ReactIcon from './images/ReactIcon';
-import JsIcon from './images/JsIcon';
+import JsIcon from './images/JsxIcon';
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -38,6 +38,10 @@ import TabPanel from '@mui/lab/TabPanel';
 import Tabs from '@mui/material/Tabs';
 import MuiTabs from "@material-ui/core/Tabs";
 import { TabsContext } from '@mui/base';
+import Moonshot from './components/Projects/Moonshot';
+import Culpa from './components/Projects/Culpa';
+import UberEats from './components/Projects/UberEats';
+import Pokemon from './components/Projects/Pokemon';
 
 
 const App = () => {
@@ -54,6 +58,10 @@ const App = () => {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/Account" element={<Account />} />
+          <Route path="/Moonshot" element={<Moonshot />} />
+          <Route path="/Culpa" element={<Culpa />} />
+          <Route path="/UberEats" element={<UberEats />} />
+          <Route path="/Pokemon" element={<Pokemon />} />
         </Routes>
       </HashRouter>
     </div>

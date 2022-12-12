@@ -4,11 +4,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "../styles/Bar.css"
 import vslogo from '../images/vscode.png';
 import * as React from 'react';
-import { green, red, yellow } from '@mui/material/colors';
+import { green, grey, red, yellow } from '@mui/material/colors';
 import CircleIcon from '@mui/icons-material/Circle';
-
+import { useNavigate } from 'react-router-dom';
 
 function TopBar() {
+    const navigate = useNavigate();
+
     return (
         <Navbar bg="dark" sticky="top">
             <Nav className="me-auto">
@@ -19,18 +21,15 @@ function TopBar() {
                     className="d-inline-block align-top"
                     alt="VS Code logo"
                 /></Nav.Item>
-                <Nav.Item>File</Nav.Item>
-                <Nav.Item>Edit</Nav.Item>
-                <Nav.Item>View</Nav.Item>
-                <Nav.Item>Go</Nav.Item>
-                <Nav.Item>Run</Nav.Item>
-                <Nav.Item>Terminal</Nav.Item>
-                <Nav.Item>Help</Nav.Item>
-                <Nav.Item style={{ marginLeft: '40vh' }}>Cool Raven - Visual Studio Code</Nav.Item>
+                <Nav.Item button onClick={() => navigate('/', { replace: true })}>Home</Nav.Item>
+                <Nav.Item button onClick={() => navigate('/Projects', { replace: true })} >Project</Nav.Item>
+                <Nav.Item button onClick={() => navigate('/Contacts', { replace: true })}>Contact</Nav.Item>
+                <Nav.Item button onClick={() => navigate('/Account', { replace: true })}>About</Nav.Item>
+                <Nav.Item style={{ marginLeft: '50vh' }}>VSCode Emulator - Cool Raven</Nav.Item>
             </Nav>
-            <CircleIcon className='circleicon' sx={{ color: yellow[800], fontSize: 17 }} />
-            <CircleIcon className='circleicon' sx={{ color: green[500], fontSize: 17 }} />
-            <CircleIcon className='circleicon' sx={{ color: red[500], fontSize: 17 }} />
+            <CircleIcon className='circleicon' sx={{ color: grey[500], fontSize: 16 }} />
+            <CircleIcon className='circleicon' sx={{ color: grey[500], fontSize: 16 }} />
+            <CircleIcon className='circleicon' sx={{ color: grey[500], fontSize: 16 }} />
         </Navbar >
     );
 }
