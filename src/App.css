@@ -4,14 +4,7 @@
 
 }
 
-html:before {
-  content: '';
-  position: fixed;
-  width: 100%;
-  height: 999px;
-  top: -999px;
-  background-color: tomato;
-}
+
 
 .App-logo {
   height: 40vmin;

@@ -25,7 +25,7 @@ const ProjectsBox = () => {
             <Grid container spacing={8} xs={12} pl={8} pt={5} >
                 <Grid item xs={3}>
                     <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8, border: 4, borderColor: "#268ac8", boxShadow: 5 }}>
-                        <CardActionArea component={Link} to="/Account">
+                        <CardActionArea component={Link} to="/Moonshot">
                             <CardMedia
                                 component="img"
                                 height="140"
@@ -47,7 +47,7 @@ const ProjectsBox = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8 }}>
-                        <CardActionArea component={Link} to="/Account">
+                        <CardActionArea component={Link} to="/Culpa">
 
                             <CardMedia
                                 component="img"
@@ -70,7 +70,7 @@ const ProjectsBox = () => {
                 </Grid>
                 <Grid item xs={3} >
                     <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8, minHeight: '22vw' }}>
-                        <CardActionArea component={Link} to="/Account">
+                        <CardActionArea component={Link} to="/UberEats">
                             <CardMedia
                                 component="img"
                                 height="140"
@@ -104,7 +104,7 @@ const ProjectsBox = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8 }}>
-                        <CardActionArea component={Link} to="/Account">
+                        <CardActionArea component={Link} to="/Pokemon">
                             <CardMedia
                                 component="img"
                                 height="140"

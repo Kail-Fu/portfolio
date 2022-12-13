@@ -301,7 +301,7 @@ const MiniDrawer = (props) => {
                     </StyledSubTabs>
                 </Box>
                 {/* <Box  /> */}
-                <Box sx={{ p: 10 }}>
+                <Box sx={{ pt: 8, pl: 3, pr: 3 }}>
                     <props.component />
                 </Box>
 

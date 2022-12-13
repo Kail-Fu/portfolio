@@ -42,8 +42,6 @@ import Moonshot from './components/Projects/Moonshot';
 import Culpa from './components/Projects/Culpa';
 import UberEats from './components/Projects/UberEats';
 import Pokemon from './components/Projects/Pokemon';
-
-
 const App = () => {
   // const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -51,6 +49,7 @@ const App = () => {
   return (
     <div className="App">
       <HashRouter>
+
         {/* <MiniDrawer setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} ></MiniDrawer> */}
         <Routes>
           {/* <Route path="/" element={<Navigate replace to="/portfolio" />} /> */}
