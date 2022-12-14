@@ -288,8 +288,8 @@ const MiniDrawer = (props) => {
                 <Box sx={{ bgcolor: '#5b5b5b', mt: -1.9, position: "fixed", width: "100%" }}>
                     <StyledSubTabs value={props.pageIndex}
                         aria-label="ant example"
-                        style={{ height: "3.6rem" }}
-                    >
+                        style={{ height: "3.6rem" }}>
+
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>Home.jsx</span>} value={0} />
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>Project.md</span>} value={1} />
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>Contact.css</span>} value={2} />
@@ -298,6 +298,7 @@ const MiniDrawer = (props) => {
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Culpa', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>Culpa.js</span>} value={5} />
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/UberEats', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>UberEats.js</span>} value={6} />
                         <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Pokemon', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>Pokemon.js</span>} value={7} />
+
                     </StyledSubTabs>
                 </Box>
                 {/* <Box  /> */}

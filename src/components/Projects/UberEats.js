@@ -20,13 +20,13 @@ const UberEatsBox = (props) => {
         <div className={styles.titleBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Improve UberEats </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Support you favourite athlete early on, share some of their future success</Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 25 - Nov. 15, 2022</Typography>
+            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Enhance couriers's apartment delivery experience via Uber Eats</Typography>
+            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Aug. 26 - Sept. 2, 2022</Typography>
         </div>
         <div className={styles.textBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             {/* <div className='textBarTitle'>Overview</div> */}
-            <Typography className={styles.subTitle} variant="h3" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Overview</Typography>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Overview</Typography>
             <Stack direction="row"
                 spacing={5}>
                 <Box sx={{ minWidth: 220 }}>
@@ -34,7 +34,7 @@ const UberEatsBox = (props) => {
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
                             <li>Product Manager</li>
-                            <li>UI/UX Designer</li>
+                            <li>UX Researcher</li>
                         </ul>
                     </Typography>
                 </Box>

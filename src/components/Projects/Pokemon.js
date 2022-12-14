@@ -26,7 +26,7 @@ const PokemonBox = (props) => {
         <div className={styles.textBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             {/* <div className='textBarTitle'>Overview</div> */}
-            <Typography className={styles.subTitle} variant="h3" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Overview</Typography>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Overview</Typography>
             <Stack direction="row"
                 spacing={5}>
                 <Box sx={{ minWidth: 220 }}>

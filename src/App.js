@@ -42,14 +42,22 @@ import Moonshot from './components/Projects/Moonshot';
 import Culpa from './components/Projects/Culpa';
 import UberEats from './components/Projects/UberEats';
 import Pokemon from './components/Projects/Pokemon';
+import createHistory from "history/createBrowserHistory"
+import ScrollToTop from './ScrollToTop';
+
+// export const history = createHistory()
+
+// history.listen((location, action) => {
+//   window.scrollTo(0, 0)
+// })
+
 const App = () => {
   // const [selectedIndex, setSelectedIndex] = React.useState(0);
 
-
   return (
     <div className="App">
-      <HashRouter>
-
+      <HashRouter >
+        <ScrollToTop />
         {/* <MiniDrawer setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} ></MiniDrawer> */}
         <Routes>
           {/* <Route path="/" element={<Navigate replace to="/portfolio" />} /> */}
