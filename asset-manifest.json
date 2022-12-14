@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1a49a5ed.css",
-    "main.js": "/portfolio/static/js/main.a3b365e7.js",
+    "main.css": "/portfolio/static/css/main.2df7ece1.css",
+    "main.js": "/portfolio/static/js/main.00ac0e81.js",
+    "static/media/moonshot_gif.gif": "/portfolio/static/media/moonshot_gif.d6e5ecfa97b00a6a92de.gif",
     "static/media/pokemon.png": "/portfolio/static/media/pokemon.479a2227521d2a33e3a8.png",
+    "static/media/moonshot_high2.png": "/portfolio/static/media/moonshot_high2.18e2884876820fb842fa.png",
+    "static/media/moonshot_high1.png": "/portfolio/static/media/moonshot_high1.7361499d1b3113536183.png",
+    "static/media/moonshot_low.png": "/portfolio/static/media/moonshot_low.2c608e0264448a66564b.png",
     "static/media/moonshot.png": "/portfolio/static/media/moonshot.e675111be8386c395e9a.png",
     "static/media/culpa.png": "/portfolio/static/media/culpa.39aa29c43a303fe0ca74.png",
     "static/media/vscode.png": "/portfolio/static/media/vscode.9bc6e588b5f2b867a8a4.png",
+    "static/media/moonshot_email.png": "/portfolio/static/media/moonshot_email.6d4d6b24c2b9799fb7d9.png",
     "static/media/Meeseeks.png": "/portfolio/static/media/Meeseeks.6dd163f2e5d740203b87.png",
     "static/media/uber.png": "/portfolio/static/media/uber.b0cdea9b93a5d4ad022d.png",
     "index.html": "/portfolio/index.html",
-    "main.1a49a5ed.css.map": "/portfolio/static/css/main.1a49a5ed.css.map",
-    "main.a3b365e7.js.map": "/portfolio/static/js/main.a3b365e7.js.map"
+    "main.2df7ece1.css.map": "/portfolio/static/css/main.2df7ece1.css.map",
+    "main.00ac0e81.js.map": "/portfolio/static/js/main.00ac0e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a49a5ed.css",
-    "static/js/main.a3b365e7.js"
+    "static/css/main.2df7ece1.css",
+    "static/js/main.00ac0e81.js"
   ]
 }
