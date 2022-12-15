@@ -10,6 +10,8 @@ import MiniDrawer from '../SideBar';
 import styles from '../../styles/Pokemon.module.css';
 import { grey } from '@mui/material/colors';
 import Divider from '@mui/material/Divider';
+import pokemon from '../../images/pokemon.gif'
+import pokemon_page from '../../images/pokemon_page.png'
 
 
 const PokemonBox = (props) => {
@@ -58,14 +60,85 @@ const PokemonBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>Iteratively Developed a <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/xo3Vn2s4XlYznsZkT5lH5w/MoonShot?page-id=0%3A1&node-id=2%3A2&viewport=70%2C289%2C0.21&scaling=scale-down&starting-point-node-id=2%3A2'>
-                                hi-fi prototype</a> for Moonshot, a startup from Y-Combinaotr 2022</li>
-                            <li>One of the founder said he is "beyond words." He even asked us to join the design team!!</li>
+                            <li>It is my first React project! Check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
+                                here</a>.</li>
+                            <li>After this project, I falled in love with React. This portfolio, as you might expect, is also made by React {":)"}</li>
                         </ul>
                     </Typography>
                 </Box>
 
             </Stack>
+        </div>
+
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Context</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                The application aims to enable Pokemon fans to build their team by type and ability.
+                Users can browse through 12 types of Pokemon, add them to the team, manage the team,
+                and get a quick team summary.
+                Users can narrow down their options by using a variety of filtering and sorting options that cover
+                Pokemons' ability and type.
+            </Typography>
+            <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Why React?</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                React is a great choice for developing interactive interfaces that are tied to an internal data state.
+                <ol>
+                    <li>I want to change the listing of Pokemons by filters and sorting options.
+                        React allows me to model the state of the interface as a function of the underlying data.
+                        This means that when the data changes, React can efficiently update the UI to reflect the new state of the data.
+                    </li>
+                    <li>
+                        This website has multiple same components like Pokemon Iteam and Cart Item.
+                        React makes it easy to create reusable components that can be shared across your application,
+                        which can help me to build a consistent and maintainable user interface.
+                    </li>
+                </ol>
+            </Typography>
+        </div>
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Research</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                I take the following usability principles into considerations:
+                <ul>
+                    <li>Learnability: The design is very intuitive and easy to understand. Pokemon cards are listed in grids. Each has basic information and a grey "ADD TO TEAM" button. All major functions are put on the navigation bar on top. Users can filter, sort, and check the cart on the bar.</li>
+                    <li>Efficiency: Users can quickly add Pokemon, remove Pokemon, and perform sorting/ranking. For all the functions mentioned, users can get them done within two clicks.</li>
+                    <li>Memorability: Users can easily restore proficiency because the design is simple, and there are not many operations to remember.</li>
+                    <li>Errors: my webpage has high recoverability. No matter what users do, to return to the default page, they only need to choose "All" in "filter by type," "filter by ability," and "By ID" in "sort by ability."</li>
+                    <li>Satisfaction: It is very pleasant to use the page because the interface is well-designed in shape, organization, and color.</li>
+                </ul>
+            </Typography>
+        </div>
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Design</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                On main page, it listed all Pokemons with picture, name, type, and ability score.
+                You can filter Pokemons by type or Ability. Similarly, you can sort Pokemon by ID or Ability.
+                When you add Pokemons to the team, there will be a red badge on the top right showing how many pokemons
+                are in your team.
+                By clicking the cart icon on the top right, you can manage your team and see your team's total ability.
+            </Typography>
+            <img src={pokemon_page} alt="pokemon page"></img>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                A sample interaction workflow is shown below:
+            </Typography>
+            <img src={pokemon} alt="pokemon website"></img>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                Feel free to interact with it your self by clicking <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
+                    here</a>.
+            </Typography>
+        </div>
+
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                After completing the project, I learned how to build reusable components in React to increase productivity.
+                I applied the knowledge on this portfolio you are looking at. Each project page is composed of one
+                title component and multiple content conponents. It not only saves my time but also makes the style consistent.
+            </Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                Moreover, I learned many useful React libaries, including Bootstrap and Material UI.
+                For example, the "Contact Me" button below is imported from Material UI. Click to see how it works {";)"}
+            </Typography>
         </div>
 
         <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
