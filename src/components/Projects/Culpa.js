@@ -10,46 +10,23 @@ import MiniDrawer from '../SideBar';
 import styles from '../../styles/Culpa.module.css';
 import { grey } from '@mui/material/colors';
 import Divider from '@mui/material/Divider';
+import culpa_low from '../../images/culpa_low.jpeg'
+import culpa_old from '../../images/old_culpa.jpeg'
+import culpa_high_desktop from '../../images/culpa_high_desktop.png'
+import culpa_high_tablet from '../../images/culpa_high_tablet.png'
+import culpa_high_phone from '../../images/culpa_high_phone.png'
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import IconButton from '@mui/material/IconButton';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 
 const CulpaBox = (props) => {
     const navigate = useNavigate();
-
     return <div>
 
         <div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div>
-
-        <div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div><div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div><div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div><div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div><div className={styles.titleBar}>
-            {/* <h2 variant="bold">Moonshot</h2> */}
-            <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 4 - Oct. 21, 2022</Typography>
-        </div><div className={styles.titleBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Redesign Culpa </Typography>
             <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Make Columbia's RateMyProfessor more efficient, responsive, and accessible </Typography>
@@ -74,7 +51,7 @@ const CulpaBox = (props) => {
                 <Box sx={{ minWidth: 80 }}>
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Team</Typography>
                     <Typography variant="h6" color={grey[300]}>
-                        1
+                        Solo
                     </Typography>
                 </Box >
                 <Box sx={{ minWidth: 150 }}>
@@ -83,6 +60,7 @@ const CulpaBox = (props) => {
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
                     </Typography>
                 </Box>
@@ -90,17 +68,115 @@ const CulpaBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>Improve <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/xo3Vn2s4XlYznsZkT5lH5w/MoonShot?page-id=0%3A1&node-id=2%3A2&viewport=70%2C289%2C0.21&scaling=scale-down&starting-point-node-id=2%3A2'>
-                                hi-fi prototype</a> for Moonshot, a startup from Y-Combinaotr 2022</li>
-                            <li>One of the founder said he is "beyond words." He even asked us to join the design team!!</li>
+                            <li>Redesign Columbia students' professor review site for usability and accessibility. Check it <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
+                                here</a>!  </li>
+                            <li>Just 1 month after the project, Columbia updated its interface due to students complaints.
+                                The new webiste solved many of the problems I identified, including what does a "gold nugget" professor mean.</li>
                         </ul>
                     </Typography>
                 </Box>
             </Stack>
         </div>
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Context</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                <a target="_blank" rel="noopener noreferrer" href='https://culpa.app/prof/3628'>
+                    CULPA</a>
+                , a website for Columbia students to rate their professors,
+                has long been a headache for Columbia students because of its poor design.
+            </Typography>
+            <img src={culpa_old} alt="culpa old" />
 
-        <Box mt={4}><Button onClick={() => navigate('/Projects', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
-            All Projects
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                I wanted to make the webiste more efficient, responsive, and accessible.The project has four steps:  <ol>
+                    <li>Identify old CULPA's usability problem</li>
+                    <li>Based on the problems, create low-fidelity wireframes, a visual design style guide, and high-fidelity prototypes.</li>
+                    <li>Using the final high-fidelity prototypes, create a responsive page using HTML and CS</li>
+                </ol>
+            </Typography>
+        </div>
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Research</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                I interviewd 5 Columbia students and compared <a target="_blank" rel="noopener noreferrer" href='https://culpa.app/prof/3628'>
+                    CULPA</a> with Brown's <a target="_blank" rel="noopener noreferrer" href='https://thecriticalreview.org/'>
+                    Critical Review</a>. I found the following user problems:
+                <ul>
+                    <li>Low Usability: Students are the primary users. They visit the website to gain insights into the professor's teaching style and class workload. However, the design makes students hard to get insights effectively. Reviews are ranked in chronological order without regard to the length of reviews or the class they are coming from.</li>
+                    <li>Low Learnability: It is difficult for users to write or understand the implication the first time they encounter this interface. To write a review, you need to click either of the two dropdown buttons. Moreover, under the professor's name, sometimes there is a line, "This professor has earned a CULPA gold nugget." However, you must go to the dropdown on the top right, click FAQ, and then know what "gold nugget" means.</li>
+                    <li>Low Memorability: Even if a user has tried multiple times, it is still hard for them to remember how to use it. Through interviews with Columbia students, I found little people could tell me the difference between the two dropdown button on the top right.</li>
+                </ul>
+            </Typography>
+        </div>
+
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Design Iterations</Typography>
+            <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Low-Fi Wireframe</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                To solve the user problems, I made a few changes to the original website:
+            </Typography>
+            <img src={culpa_low} alt="culpa lowfi" />
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                To summarize: <ol>
+                    <li>I enable users to filter and sort reviews. Students could either filter by class name or time range. They could also sort by time or review length. This feature enables users to find the most useful review for them more effectively, thus increasing usability.</li>
+                    <li>Without going to FAQ to find the meaning of the golden badge, users could click the information icon on the top right. It reduces the things to learn and remember for users, thus improving learnability and memorability.</li>
+                    <li>I break down the two drop-down menus into three core functions: FAQ, Contact, and Write A Review. So people no longer need to memorize what's included in each dropdown menu, thus improving memorability.</li>
+                    <li>The new interface summarizes and lists common phrases that appear in reviews, so students can quickly click the tag and get all reviews that contain the term, such as "Midterm." This feature boosts usability by improving users' task success effectiveness.</li>
+                </ol>
+            </Typography>
+            <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Hi-Fi Wireframe</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                Based on the low-fi wireframe, I make hi-fi prototype in three different interfaces:
+            </Typography>
+            <Stack direction={"column"} marginBottom="0.8rem">
+                <figure>
+                    <img src={culpa_high_desktop} alt="culpa high" />
+                    <figcaption>Desktop</figcaption>
+                </figure>
+
+                <Stack direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'row' }}
+                >
+                    <div>
+                        <figure>
+                            <img src={culpa_high_tablet} alt="culpa high" />
+                            <figcaption>Tablet</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src={culpa_high_phone} alt="culpa high" />
+                            <figcaption>Phone</figcaption>
+                        </figure>
+                    </div>
+                </Stack>
+            </Stack>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                Following the hi-fi prototype, I created a sample page for the new CULPA. Feel free to check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
+                    here</a>.
+            </Typography>
+
+        </div>
+        <div className={styles.textBar}>
+            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                In this project, I learnt a lot through designing, developed, and deploying the website.
+
+            </Typography>
+            {/* <img src={moonshot_email} alt="email" /> */}
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                As a designer, I honed my skills in identifying usability and accessibility problems.
+                Based on user feedback and design principles,
+                I iteratively designed a new layout that improves CULPA's learnability, efficiency, and memorability.
+            </Typography>
+            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+                As a frontend developer designer, I learned how to create responsive webiste that works on
+                laptops, tablets, and phones. Although responsive design requires numerous trails and errors,
+                it feel so great when everything looks just perfect {":)"}
+            </Typography>
+        </div>
+
+        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+            Contact Me
         </Button></Box>
     </div>
 

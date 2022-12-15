@@ -42,7 +42,6 @@ import Moonshot from './components/Projects/Moonshot';
 import Culpa from './components/Projects/Culpa';
 import UberEats from './components/Projects/UberEats';
 import Pokemon from './components/Projects/Pokemon';
-import createHistory from "history/createBrowserHistory"
 import ScrollToTop from './ScrollToTop';
 
 // export const history = createHistory()

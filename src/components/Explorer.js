@@ -39,7 +39,7 @@ const ExplorerBox = (props) => {
         const timeout = setTimeout(() => {
             setSubIndex((prev) => prev + (reverse ? -1 : 1));
         }, Math.max(reverse ? 60 : subIndex === words[index].length ? 2222 :
-            150, parseInt(Math.random() * 100)));
+            60, parseInt(Math.random() * 60)));
 
         return () => clearTimeout(timeout);
     }, [subIndex, index, reverse]);

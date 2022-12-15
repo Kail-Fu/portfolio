@@ -41,7 +41,7 @@ const PokemonBox = (props) => {
                 <Box sx={{ minWidth: 80 }}>
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Team</Typography>
                     <Typography variant="h6" color={grey[300]}>
-                        1
+                        Solo
                     </Typography>
                 </Box >
                 <Box sx={{ minWidth: 150 }}>
@@ -68,8 +68,8 @@ const PokemonBox = (props) => {
             </Stack>
         </div>
 
-        <Box mt={4}><Button onClick={() => navigate('/Projects', { replace: true })} variant="contained" style={{ fontSize: '18px' }} sx={{ fontWeight: 'bold' }}>
-            All Projects
+        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+            Contact Me
         </Button></Box>
     </div>
 
