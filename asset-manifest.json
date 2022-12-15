@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4f9dae43.css",
-    "main.js": "/portfolio/static/js/main.70ddd687.js",
+    "main.js": "/portfolio/static/js/main.3a819fee.js",
+    "static/media/pokemon.gif": "/portfolio/static/media/pokemon.33d4d3c9d3c92554d059.gif",
     "static/media/moonshot_gif.gif": "/portfolio/static/media/moonshot_gif.d6e5ecfa97b00a6a92de.gif",
+    "static/media/pokemon_page.png": "/portfolio/static/media/pokemon_page.00ef94b31ed60ce42a17.png",
     "static/media/pokemon.png": "/portfolio/static/media/pokemon.479a2227521d2a33e3a8.png",
     "static/media/old_culpa.jpeg": "/portfolio/static/media/old_culpa.e2a98b10fa49782bc675.jpeg",
     "static/media/ubereats_mvp.png": "/portfolio/static/media/ubereats_mvp.51fd33d615061c64ee73.png",
@@ -25,10 +27,10 @@
     "static/media/uber.png": "/portfolio/static/media/uber.b0cdea9b93a5d4ad022d.png",
     "index.html": "/portfolio/index.html",
     "main.4f9dae43.css.map": "/portfolio/static/css/main.4f9dae43.css.map",
-    "main.70ddd687.js.map": "/portfolio/static/js/main.70ddd687.js.map"
+    "main.3a819fee.js.map": "/portfolio/static/js/main.3a819fee.js.map"
   },
   "entrypoints": [
     "static/css/main.4f9dae43.css",
-    "static/js/main.70ddd687.js"
+    "static/js/main.3a819fee.js"
   ]
 }
