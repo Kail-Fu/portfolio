@@ -18,7 +18,7 @@ const ContactsBox = () => {
 
     const classes = useStyles();
     return <div>
-        <Box pt={1} pl={40} pr={40} pb={4}>
+        <Box pt={1} pl={40} pr={40} pb={6}>
             <Typography variant="h3" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="1rem">
                 Hi there, I'm coolraven222!
             </Typography>
@@ -26,12 +26,12 @@ const ContactsBox = () => {
                 Welcome! I'm an incoming Product Manager at Uber, reimagining
                 how humans could go anywhere, get anything.
             </Typography>
-            <Typography variant='h5' color={grey[300]}>
+            {/* <Typography variant='h5' color={grey[300]}>
                 Let's connect!
-            </Typography>
+            </Typography> */}
         </Box>
         <div className={styles.container}>
-            <Box align="left" pl={5} sx={{ width: '40%' }}>
+            <Box align="left" pl={10} sx={{ width: '40%' }}>
                 <Typography variant='h5' color={grey[300]} marginBottom="1rem">
                     Reach Out Via:
                 </Typography>
