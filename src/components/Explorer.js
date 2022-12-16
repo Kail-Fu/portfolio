@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Button, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect, } from "react";
 import { useNavigate } from 'react-router-dom';
-import Meeseeks from '../images/Meeseeks.png'
 import MiniDrawer from './SideBar';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
@@ -14,7 +12,7 @@ import { grey } from "@mui/material/colors";
 import { Grid } from "@mui/material";
 import { Chip } from "@mui/material";
 import CardActionArea from '@mui/material/CardActionArea';
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 var words = ["Product Manager", "Full Stack Developer", "Web Designer", "Magician"];
 for (let i = 0; i < 10; i++) {
@@ -92,7 +90,7 @@ const ExplorerBox = (props) => {
                                     <Chip label="UserTesting" variant="outlined" sx={{ color: "#E0E0E0", borderColor: "#E0E0E0", marginRight: 0.5, marginBottom: 0.5 }} />
                                 </Box>
                                 <Typography color="#E0E0E0">
-                                    A platform to support your favourite athlete early on, share some of their future success
+                                    A platform to support your favorite athlete early on and share some of their future success
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -143,7 +141,7 @@ const ExplorerBox = (props) => {
                                     <Chip label="Figma" variant="outlined" sx={{ color: "#E0E0E0", borderColor: "#E0E0E0", marginRight: 0.5, marginBottom: 0.5 }} />
                                 </Box>
                                 <Typography color="#E0E0E0">
-                                    1 week product challenge to enhance couriers's apartment delivery experience via UberEats
+                                    1 week product challenge to enhance couriers' apartment delivery experience via UberEats
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -178,28 +176,6 @@ const ExplorerBox = (props) => {
             </Grid>
         </Box >
     </Stack >
-
-
-    // return <>
-    //     <div className={styles.container}>
-    //         {/* <div className={styles.background}>
-    //             <h1>I BUILD</h1>
-    //             <h1>WEBSITES</h1>
-    //         </div> */}
-    //         <div className={styles.foreground}>
-    //             <div className={styles.content}>
-    //                 <h1 className={styles.name}>Nitin Ranganath</h1>
-    //                 <h6 className={styles.bio}>Full Stack Web Developer</h6>
-    //                 <Link href="/Projects">
-    //                     <button className={styles.button}>View Work</button>
-    //                 </Link>
-    //                 <Link href="/Contacts">
-    //                     <button className={styles.outlined}>Contact Me</button>
-    //                 </Link>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </>
 };
 
 const Explorer = () => {

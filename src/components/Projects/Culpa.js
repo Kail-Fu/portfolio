@@ -1,25 +1,16 @@
 import Box from '@mui/material/Box';
-import { styled, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { Tabs, Tab } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button, Stack } from '@mui/material';
-import Link from '@mui/material/Link';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import MiniDrawer from '../SideBar';
 import styles from '../../styles/Culpa.module.css';
 import { grey } from '@mui/material/colors';
-import Divider from '@mui/material/Divider';
 import culpa_low from '../../images/culpa_low.jpeg'
 import culpa_old from '../../images/old_culpa.jpeg'
 import culpa_high_desktop from '../../images/culpa_high_desktop.png'
 import culpa_high_tablet from '../../images/culpa_high_tablet.png'
 import culpa_high_phone from '../../images/culpa_high_phone.png'
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
+
 
 
 const CulpaBox = (props) => {
@@ -68,10 +59,10 @@ const CulpaBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>Redesign Columbia students' professor review site for usability and accessibility. Check it <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
+                            <li>Redesign Columbia students' professor review site for usability and accessibility. Check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
                                 here</a>!  </li>
-                            <li>Just 1 month after the project, Columbia updated its interface due to students complaints.
-                                The new webiste solved many of the problems I identified, including what does a "gold nugget" professor mean.</li>
+                            <li>Just 1 month after the project, Columbia updated its interface due to students' complaints.
+                                The new website solved many of the problems I identified, including what a "gold nugget" professor means.</li>
                         </ul>
                     </Typography>
                 </Box>
@@ -88,23 +79,23 @@ const CulpaBox = (props) => {
             <img src={culpa_old} alt="culpa old" />
 
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                I wanted to make the webiste more efficient, responsive, and accessible.The project has four steps:  <ol>
-                    <li>Identify old CULPA's usability problem</li>
+                I wanted to make the website more efficient, responsive, and accessible. The project has four steps:  <ol>
+                    <li>Identify old CULPA's usability problem.</li>
                     <li>Based on the problems, create low-fidelity wireframes, a visual design style guide, and high-fidelity prototypes.</li>
-                    <li>Using the final high-fidelity prototypes, create a responsive page using HTML and CS</li>
+                    <li>Using the final high-fidelity prototypes, create a responsive page using HTML and CSS.</li>
                 </ol>
             </Typography>
         </div>
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Research</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                I interviewd 5 Columbia students and compared <a target="_blank" rel="noopener noreferrer" href='https://culpa.app/prof/3628'>
+                I interviewed 5 Columbia students and compared <a target="_blank" rel="noopener noreferrer" href='https://culpa.app/prof/3628'>
                     CULPA</a> with Brown's <a target="_blank" rel="noopener noreferrer" href='https://thecriticalreview.org/'>
                     Critical Review</a>. I found the following user problems:
                 <ul>
                     <li>Low Usability: Students are the primary users. They visit the website to gain insights into the professor's teaching style and class workload. However, the design makes students hard to get insights effectively. Reviews are ranked in chronological order without regard to the length of reviews or the class they are coming from.</li>
-                    <li>Low Learnability: It is difficult for users to write or understand the implication the first time they encounter this interface. To write a review, you need to click either of the two dropdown buttons. Moreover, under the professor's name, sometimes there is a line, "This professor has earned a CULPA gold nugget." However, you must go to the dropdown on the top right, click FAQ, and then know what "gold nugget" means.</li>
-                    <li>Low Memorability: Even if a user has tried multiple times, it is still hard for them to remember how to use it. Through interviews with Columbia students, I found little people could tell me the difference between the two dropdown button on the top right.</li>
+                    <li>Low Learnability: It is difficult for users to write or understand the implication the first time they encounter this interface. You need to click either of the two dropdown buttons to write a review. Moreover, under the professor's name, sometimes there is a line, "This professor has earned a CULPA gold nugget." However, you must go to the dropdown on the top right, click FAQ, and then know what "gold nugget" means.</li>
+                    <li>Low Memorability: Even if a user has tried multiple times, it is still hard to remember how to use it. Through interviews with Columbia students, I found few people could tell me the difference between the two dropdown buttons on the top right.</li>
                 </ul>
             </Typography>
         </div>
@@ -120,13 +111,13 @@ const CulpaBox = (props) => {
                 To summarize: <ol>
                     <li>I enable users to filter and sort reviews. Students could either filter by class name or time range. They could also sort by time or review length. This feature enables users to find the most useful review for them more effectively, thus increasing usability.</li>
                     <li>Without going to FAQ to find the meaning of the golden badge, users could click the information icon on the top right. It reduces the things to learn and remember for users, thus improving learnability and memorability.</li>
-                    <li>I break down the two drop-down menus into three core functions: FAQ, Contact, and Write A Review. So people no longer need to memorize what's included in each dropdown menu, thus improving memorability.</li>
+                    <li>I break down the two dropdown menus into three core functions: FAQ, Contact, and Write A Review. So people no longer need to memorize what's included in each dropdown menu, thus improving memorability.</li>
                     <li>The new interface summarizes and lists common phrases that appear in reviews, so students can quickly click the tag and get all reviews that contain the term, such as "Midterm." This feature boosts usability by improving users' task success effectiveness.</li>
                 </ol>
             </Typography>
             <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Hi-Fi Wireframe</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Based on the low-fi wireframe, I make hi-fi prototype in three different interfaces:
+                Based on the low-fi wireframe, I made a hi-fi prototype in three different interfaces:
             </Typography>
             <Stack direction={"column"} marginBottom="0.8rem">
                 <figure>
@@ -159,7 +150,7 @@ const CulpaBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                In this project, I learnt a lot through designing, developed, and deploying the website.
+                In this project, I learned a lot through designing, developing, and deploying the website.
 
             </Typography>
             {/* <img src={moonshot_email} alt="email" /> */}
@@ -169,9 +160,8 @@ const CulpaBox = (props) => {
                 I iteratively designed a new layout that improves CULPA's learnability, efficiency, and memorability.
             </Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                As a frontend developer designer, I learned how to create responsive webiste that works on
-                laptops, tablets, and phones. Although responsive design requires numerous trails and errors,
-                it feel so great when everything looks just perfect {":)"}
+                As a front-end developer designer, I learned how to create responsive websites that work across devices,
+                including laptops, tablets, and phones. Although responsive design requires  numerous trials and errors, it feels so great when everything looks just perfect {":)"}
             </Typography>
         </div>
 

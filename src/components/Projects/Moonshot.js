@@ -1,15 +1,10 @@
 import Box from '@mui/material/Box';
-import { styled, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { Tabs, Tab } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button, Stack } from '@mui/material';
-import Link from '@mui/material/Link';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import MiniDrawer from '../SideBar';
 import styles from '../../styles/Moonshot.module.css';
 import { grey } from '@mui/material/colors';
-import Divider from '@mui/material/Divider';
 import moonshot_low from '../../images/moonshot_low.png';
 import moonshot_high1 from '../../images/moonshot_high1.png';
 import moonshot_high2 from '../../images/moonshot_high2.png';
@@ -25,7 +20,7 @@ const MoonshotBox = (props) => {
         <div className={styles.titleBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Design Moonshot </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> A platform to support your favourite athlete early on, share some of their future success</Typography>
+            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> A platform to support your favorite athlete early on and share some of their future success</Typography>
             <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Oct. 25 - Nov. 15, 2022</Typography>
         </div>
         <div className={styles.textBar}>
@@ -76,15 +71,13 @@ const MoonshotBox = (props) => {
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Context</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
                 I worked in a team of 4 to design the interface of <a href="https://www.ycombinator.com/companies/moonshot" target="_blank" rel="noopener noreferrer">Moonshot</a>,
-                a Y-Combinator backed startup for angel investing in athletes.
+                a Y-Combinator-backed startup for angel investing in athletes.
             </Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Currently (Oct. 2022), Moonshot only has a information page and desperately needs an interface to attrack backers for young potential athletes.
-                Passionate about sports and crowd funding, we decide to make one for them.
-                The project has four steps: <ol>
-                    <li>Sketch interfaces for the product and combine ideas in a wireframe</li>
-                    <li>Create an interactive high-fidelity mockup based on the wireframe</li>
-                    <li>Conduct usability test for the interactive hi-fi prototype through a remote user testing service</li>
+                Currently (Oct. 2022), Moonshot only has an information page and desperately needs an interface to attract backers for young potential athletes. Passionate about sports and crowdfunding, we decide to make one for them. The project has four steps: <ol>
+                    <li>Sketch interfaces for the product and combine ideas in a wireframe.</li>
+                    <li>Create an interactive high-fidelity mockup based on the wireframe.</li>
+                    <li>Conduct usability test for the interactive hi-fi prototype through a remote user testing service.</li>
                     <li>Contact the startup!</li>
                 </ol>
             </Typography>
@@ -92,20 +85,17 @@ const MoonshotBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Research</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Throughout rearch, we found that becoming a professional athlete is extremely expensive and risky.
-                Professional tennis players spend more than $100,000 annually.
-                This is a real problem for those with underprivileged backgrounds.
-                To solve the problem, we want to design an interface for Moonshot to bring backers to the rescue.
+                Through the research, we found that becoming a professional athlete is extremely expensive and risky. Professional tennis players spend more than $100,000 annually. This is a real problem for those with underprivileged backgrounds. To solve the problem, we want to design an interface for Moonshot to bring backers to the rescue.
                 <ul><li>For Backers:
                     <ul>
-                        <li>Support their favourite up-and-coming athlete by investing in their career.</li>
-                        <li>If their supported atheletes succeed, backers can make a nice return in the form of a cut on the athletes' future earnings.</li>
-                        <li>Get special perks such as sitting courtside and joining training.</li>
+                        <li>Support their favorite up-and-coming athlete by investing in their career.</li>
+                        <li>If their supported athletes succeed, backers can make a nice return in the form of a cut on the athletes' future earnings.</li>
+                        <li>Get special perks such as sitting courtside and joining the training.</li>
                     </ul>
                 </li>
                     <li> For Athletes
                         <ul>
-                            <li>Athletes get the money they need to continue their professional career.</li>
+                            <li>Athletes get the money they need to continue their professional careers.</li>
                             <li>Athletes can also gain their loyal audience early on!</li>
                         </ul>
                     </li>
@@ -117,21 +107,16 @@ const MoonshotBox = (props) => {
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Design Iterations</Typography>
             <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Low-Fi Wireframe</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Each of our design group draws a set of 3 frames for the Moonshot web platform,
-                covering different aspects of its functionalities,
-                including searching, viewing, and pledging for athletes.
-                After comparing and contrasting within our group, we combine a set of elements into a low-fidelity wireframe:
+                Each of our design groups draws a set of 3 frames for the Moonshot web platform, covering different aspects of its functionalities, including searching, viewing, and pledging for athletes. After comparing and contrasting within our group, we combine a set of elements into a low-fidelity wireframe:
             </Typography>
             <img src={moonshot_low} alt="moonshot lowfi" />
             <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Hi-Fi Wireframe</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Based on the low-fi wireframe, we create our initial high-fi prototype for mockup.
-                We receive several critiques for this version.
-                See the image below for the prototype and feedback markups.
+                Based on the low-fi wireframe, we created our initial high-fi prototype for mockup. We receive several critiques for this version. See the image below for the prototype and feedback markups.
             </Typography>
             <img src={moonshot_high1} alt="moonshot hifi 1" />
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                To address these feedbacks, we build our second version of high-fi prototype.
+                We build our second version of the high-fi prototype to address the feedback.
             </Typography>
             <img src={moonshot_high2} alt="moonshot hifi 2" />
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
@@ -143,9 +128,7 @@ const MoonshotBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Feedback</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Using UserTesting, we conducted 3 usability.
-                Our overarching goal was to explore how the interface helps investors
-                search, explore, and invest in up-and-coming athletes.
+                Using UserTesting, we conducted 3 usability tests. Our overarching goal was to explore how the interface helps investors search, explore, and invest in up-and-coming athletes.
             </Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
                 User Feedbacks:
@@ -165,14 +148,10 @@ const MoonshotBox = (props) => {
                     </li>
                     <li>To summarize:
                         <ul>
-                            <li>Overall, UserTesting results validate our assumption on user behavior and prove the interface's learnability and usability.</li>
-                            <li>All three users successfully complete all the tasks with little confusion. They describe the interface as "professional", "kind of neat", and "intuitive".
-                                On a scale from 1 (very hard to use) to 5 (very easy to use), all three users rate us 5 on almost all subtasks.
+                            <li>Overall, UserTesting results validate our assumption of user behavior and prove the interface's learnability and usability.</li>
+                            <li>All three users successfully complete all the tasks with little confusion. They describe the interface as "professional," "kind of neat," and "intuitive." On a scale from 1 (very hard to use) to 5 (very easy to use), all three users rate us 5 on almost all subtasks.
                             </li>
-                            <li>The first reported confusing design is on “How It Works” page where we use the Moonshoy logo as the button to go back to the main page.
-                                The second confusion happens when a user interacts with the search bar and is surprised by the fact that she could search by states.
-                                The last confusing feature is on the profile page where a user is unsure what does "my team" mean.
-                            </li>
+                            <li>The first reported confusing design is on the "How It Works" page, where we use the Moonshot logo as the button to go back to the main page. The second confusion happens when a user interacts with the search bar and is surprised by the fact that she can search by state. The last confusing feature is on the profile page, where a user is unsure what "my team" mean.</li>
                         </ul>
                     </li>
                 </ul>
@@ -181,27 +160,16 @@ const MoonshotBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                We sent the hi-fi prototype to the founders of Moonshot.
-                They are amazed by our the interface's design and emailed us back:
+                We sent the hi-fi prototype to the founders of Moonshot. They are amazed by our the interface's design and emailed us back:
             </Typography>
             <img src={moonshot_email} alt="email" />
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                In the following week, Dimitris and us met on zoom. The conversation went great.
-                We discussed the progress of their design team, shared throughs of launching a startup,
-                and talked about the freezing cold 2022 job market. In the end, he even invited us to
-                part-time at their design team when available!
+                In the following week, Dimitris and us met on zoom. The conversation went great. We discussed the progress of their design team, shared the throughs of launching a startup, and talked about the freezing cold 2022 job market. In the end, he even invited us to work part-time with their design team when available!
             </Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                In this project, I learned how to lead a team with different background in designing,
-                synthesize dozons of sketches into a hi-fi prototype, and conduct user-oriented usability testing.
-                Most importantly, I got the chance to build something I am really passionate about.
-                It feels so good when users and stakeholders like our product.
+                In this project, I learned how to lead a team with different backgrounds in designing, synthesizing dozens of sketches into a hi-fi prototype, and conducting user-oriented usability testing. Most importantly, I got the chance to build something I am really passionate about. It feels so good when users and stakeholders like our product.
             </Typography>
         </div>
-
-
-
-
 
         <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
             Contact Me

@@ -1,15 +1,10 @@
 import Box from '@mui/material/Box';
-import { styled, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { Tabs, Tab } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button, Stack } from '@mui/material';
-import Link from '@mui/material/Link';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import MiniDrawer from '../SideBar';
 import styles from '../../styles/Pokemon.module.css';
 import { grey } from '@mui/material/colors';
-import Divider from '@mui/material/Divider';
 import pokemon from '../../images/pokemon.gif'
 import pokemon_page from '../../images/pokemon_page.png'
 
@@ -35,7 +30,7 @@ const PokemonBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">My Role</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>Fontend Developer</li>
+                            <li>Frontend Developer</li>
                             <li>UI/UX Designer</li>
                         </ul>
                     </Typography>
@@ -62,7 +57,7 @@ const PokemonBox = (props) => {
                         <ul>
                             <li>It is my first React project! Check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
                                 here</a>.</li>
-                            <li>After this project, I falled in love with React. This portfolio, as you might expect, is also made by React {":)"}</li>
+                            <li>After this project, I fell in love with React. This portfolio, as you might expect, is also made by React {":)"}</li>
                         </ul>
                     </Typography>
                 </Box>
@@ -88,7 +83,7 @@ const PokemonBox = (props) => {
                         This means that when the data changes, React can efficiently update the UI to reflect the new state of the data.
                     </li>
                     <li>
-                        This website has multiple same components like Pokemon Iteam and Cart Item.
+                        This website has multiple same components like Pokemon Item and Cart Item.
                         React makes it easy to create reusable components that can be shared across your application,
                         which can help me to build a consistent and maintainable user interface.
                     </li>
@@ -98,7 +93,7 @@ const PokemonBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Research</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                I take the following usability principles into considerations:
+                I take the following usability principles into consideration:
                 <ul>
                     <li>Learnability: The design is very intuitive and easy to understand. Pokemon cards are listed in grids. Each has basic information and a grey "ADD TO TEAM" button. All major functions are put on the navigation bar on top. Users can filter, sort, and check the cart on the bar.</li>
                     <li>Efficiency: Users can quickly add Pokemon, remove Pokemon, and perform sorting/ranking. For all the functions mentioned, users can get them done within two clicks.</li>
@@ -111,9 +106,9 @@ const PokemonBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Design</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                On main page, it listed all Pokemons with picture, name, type, and ability score.
-                You can filter Pokemons by type or Ability. Similarly, you can sort Pokemon by ID or Ability.
-                When you add Pokemons to the team, there will be a red badge on the top right showing how many pokemons
+                On the main page, it listed all Pokemons with picture, name, type, and ability score.
+                You can filter Pokemons by type or ability. Similarly, you can sort Pokemon by ID or Ability.
+                When you add Pokemons to the team, there will be a red badge on the top right showing how many Pokemon
                 are in your team.
                 By clicking the cart icon on the top right, you can manage your team and see your team's total ability.
             </Typography>
@@ -123,7 +118,7 @@ const PokemonBox = (props) => {
             </Typography>
             <img src={pokemon} alt="pokemon website"></img>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Feel free to interact with it your self by clicking <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
+                Feel free to interact with it yourself by clicking <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
                     here</a>.
             </Typography>
         </div>
@@ -132,12 +127,12 @@ const PokemonBox = (props) => {
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
                 After completing the project, I learned how to build reusable components in React to increase productivity.
-                I applied the knowledge on this portfolio you are looking at. Each project page is composed of one
-                title component and multiple content conponents. It not only saves my time but also makes the style consistent.
+                I applied the knowledge to the portfolio you are looking at. Each project page is composed of one
+                title component and multiple content components. It not only saves my time but also makes the style consistent.
             </Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Moreover, I learned many useful React libaries, including Bootstrap and Material UI.
-                For example, the "Contact Me" button below is imported from Material UI. Click to see how it works {";)"}
+                Moreover, I learned many useful React libraries, including Bootstrap and Material UI.
+                For example, I imported the "Contact Me" button belowfrom Material UI. Click to see how it works {";)"}
             </Typography>
         </div>
 

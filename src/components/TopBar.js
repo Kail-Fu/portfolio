@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "../styles/Bar.css"
 import vslogo from '../images/vscode.png';
 import * as React from 'react';
-import { green, grey, red, yellow } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import CircleIcon from '@mui/icons-material/Circle';
 import { useNavigate } from 'react-router-dom';
 
