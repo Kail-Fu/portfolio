@@ -81,7 +81,7 @@ const ExplorerBox = (props) => {
                                 sx={{ objectFit: "contain", bgcolor: "#040443" }}
                             />
                             <CardContent >
-                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h5" component="div">
+                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h6" component="div">
                                     Design Moonshot
                                 </Typography>
                                 <Box>
@@ -108,7 +108,7 @@ const ExplorerBox = (props) => {
                                 sx={{ objectFit: "contain", bgcolor: "#fb9be2" }}
                             />
                             <CardContent >
-                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h5" component="div">
+                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h6" component="div">
                                     Redesign Culpa
                                 </Typography>
                                 <Box>
@@ -134,7 +134,7 @@ const ExplorerBox = (props) => {
                                 sx={{ objectFit: "contain", bgcolor: "#43c364" }}
                             />
                             <CardContent >
-                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h5" component="div">
+                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h6" component="div">
                                     Improve UberEats
                                 </Typography>
                                 <Box>
@@ -158,7 +158,7 @@ const ExplorerBox = (props) => {
                                 sx={{ objectFit: "contain", bgcolor: "#fae384" }}
                             />
                             <CardContent >
-                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h5" component="div">
+                                <Typography fontWeight='bold' color="#E0E0E0" gutterBottom variant="h6" component="div">
                                     Build Pokemon Team
                                 </Typography>
                                 <Box>

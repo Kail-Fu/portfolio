@@ -125,7 +125,7 @@ const ContactsBox = () => {
                     </Grid>
                     <Grid item xs={5}>
                         <Button
-                            style={{ width: "100%", color: "white", backgroundColor: "#268ac8" }}
+                            style={{ width: "100%", color: "#E0E0E0", backgroundColor: "#268ac8" }}
                             variant="contained"
                         >
                             Send Message

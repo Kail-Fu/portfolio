@@ -100,7 +100,7 @@ const ListItem = withStyles({
     root: {
         "&$selected": {
             backgroundColor: '#383838',
-            borderLeft: '3px solid white',
+            borderLeft: '3px solid #E0E0E0',
             "& .MuiListItemIcon-root": {
                 color: "white"
             }
