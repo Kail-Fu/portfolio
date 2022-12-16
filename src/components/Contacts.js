@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { orange } from '@mui/material/colors';
+import { grey, orange } from '@mui/material/colors';
 import { styled, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import styles from '../styles/Contacts.module.css'
@@ -18,24 +18,39 @@ const ContactsBox = () => {
 
     const classes = useStyles();
     return <div>
+        <Box pt={1} pl={40} pr={40} pb={4}>
+            <Typography variant="h3" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="1rem">
+                Hi there, I'm coolraven222!
+            </Typography>
+            <Typography variant='h5' color={grey[300]}>
+                Welcome! I'm an incoming Product Manager at Uber, reimagining
+                how humans could go anywhere, get anything.
+            </Typography>
+            <Typography variant='h5' color={grey[300]}>
+                Let's connect!
+            </Typography>
+        </Box>
         <div className={styles.container}>
-            <Box align="left" pl={10} sx={{ width: '40%' }}>
-                <h3 style={{ color: 'white' }}>Find Me On</h3>
+            <Box align="left" pl={5} sx={{ width: '40%' }}>
+                <Typography variant='h5' color={grey[300]} marginBottom="1rem">
+                    Reach Out Via:
+                </Typography>
                 <div className={styles.code}>
                     <p className={styles.line}>
-                        <span className={styles.className}>.contacts{"{"}</span>
+                        <span className={styles.whiteText}>.contacts{"{"}</span>
                     </p>
                     <p className={styles.line} key={0}>
-                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>Linkedin:{' '}</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <span className={styles.whiteText}>Linkedin:{' '}</span>
                         <a href={"https://www.linkedin.com/in/profjeffhuang/"} target="_blank" rel="noopener noreferrer">
                             {"https://www.linkedin.com/in/profjeffhuang/"}
                         </a>
                         <span className={styles.whiteText}>;</span>
                     </p>
                     <p className={styles.line} key={0}>
-                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>Email:{' '}</span>
-                        <a href={"uiuxtas@lists.cs.brown.edu"} target="_blank" rel="noopener noreferrer">
-                            {"uiuxtas@lists.cs.brown.edu"}
+                        &nbsp;&nbsp;&nbsp;<span className={styles.whiteText}>Medium:{' '}</span>
+                        <a href={"https://medium.com/@producthunt"} target="_blank" rel="noopener noreferrer">
+                            {"https://medium.com/@producthunt"}
                         </a>
                         <span className={styles.whiteText}>;</span>
                     </p>
@@ -61,12 +76,14 @@ const ContactsBox = () => {
                         <span className={styles.whiteText}>;</span>
                     </p>
                     <p className={styles.line}>
-                        <span className={styles.className}>{"}"}</span>
+                        <span className={styles.whiteText}>{"}"}</span>
                     </p>
                 </div>
             </Box>
             <Box align="left" pl={6} pr={6} sx={{ width: '45%', borderLeft: 4, borderColor: "rgb(38,138,200)" }}>
-                <h3 style={{ color: 'white' }}>Or Send Me Here</h3>
+                <Typography variant='h5' color={grey[300]} marginBottom="1rem">
+                    Or Fill Out This Form:
+                </Typography>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <TextField
@@ -112,7 +129,7 @@ const ContactsBox = () => {
                             style={{ width: "100%" }}
                             placeholder="Enter reason for contact"
                             multiline
-                            rows={4}
+                            rows={2}
                         />
                     </Grid>
                     <Grid item xs={5}>
@@ -182,7 +199,7 @@ const ContactsBox = () => {
 };
 
 const Contacts = () => {
-    return <MiniDrawer pageIndex={2} component={ContactsBox} />
+    return <MiniDrawer pageIndex={5} component={ContactsBox} />
 }
 
 export default Contacts;

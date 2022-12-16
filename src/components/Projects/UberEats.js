@@ -24,7 +24,7 @@ const UberEatsBox = (props) => {
         <div className={styles.titleBar}>
             {/* <h2 variant="bold">Moonshot</h2> */}
             <Typography variant="h2" color={grey[300]} sx={{ fontWeight: 800 }}> Improve UberEats </Typography>
-            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Enhance couriers's apartment delivery experience via Uber Eats</Typography>
+            <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Enhance couriers's apartment delivery experience via UberEats</Typography>
             <Typography variant="h6" color={grey[300]} sx={{ fontWeight: 800 }}> Aug. 26 - Sept. 2, 2022</Typography>
         </div>
         <div className={styles.textBar}>
@@ -240,7 +240,7 @@ const UberEatsBox = (props) => {
 };
 
 const UberEats = () => {
-    return <MiniDrawer pageIndex={6} component={UberEatsBox} />
+    return <MiniDrawer pageIndex={3} component={UberEatsBox} />
 }
 
 export default UberEats;

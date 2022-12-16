@@ -69,7 +69,7 @@ const ProjectsBox = () => {
                     </Card>
                 </Grid>
                 <Grid item xs={3} >
-                    <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8, minHeight: '22vw' }}>
+                    <Card color={grey[500]} sx={{ bgcolor: "#5b5b5b", borderRadius: 8 }}>
                         <CardActionArea component={Link} to="/UberEats">
                             <CardMedia
                                 component="img"
@@ -95,8 +95,7 @@ const ProjectsBox = () => {
                                     </Grid>
                                 </Grid>
                                 <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    Enhance couriers's apartment delivery experience via UberEats
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

@@ -149,7 +149,7 @@ const PokemonBox = (props) => {
 };
 
 const Pokemon = () => {
-    return <MiniDrawer pageIndex={7} component={PokemonBox} />
+    return <MiniDrawer pageIndex={4} component={PokemonBox} />
 }
 
 export default Pokemon;

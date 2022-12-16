@@ -183,7 +183,7 @@ const CulpaBox = (props) => {
 };
 
 const Culpa = () => {
-    return <MiniDrawer pageIndex={5} component={CulpaBox} />
+    return <MiniDrawer pageIndex={2} component={CulpaBox} />
 }
 
 export default Culpa;

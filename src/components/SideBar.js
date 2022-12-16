@@ -37,6 +37,19 @@ import TabPanel from '@mui/lab/TabPanel';
 import Tabs from '@mui/material/Tabs';
 import MuiTabs from "@material-ui/core/Tabs";
 import { TabsContext } from '@mui/base';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined';
+import TakeoutDiningOutlinedIcon from '@mui/icons-material/TakeoutDiningOutlined';
+import CatchingPokemonOutlinedIcon from '@mui/icons-material/CatchingPokemonOutlined';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import { Divider } from '@mui/material';
+
+
+
+
+
 
 const AntTabs = styled(Tabs)({
     borderBottom: '1px solid #e8e8e8',
@@ -183,7 +196,7 @@ const MiniDrawer = (props) => {
     const classes = useStyles();
 
     return (
-        <Box sx={{ display: 'flex', minHeight: "100vh", backgroundColor: "#222222" }}>
+        <Box sx={{ display: 'flex', minHeight: "100vh", minWidth: "100vw", backgroundColor: "#222222" }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
@@ -210,12 +223,12 @@ const MiniDrawer = (props) => {
                                     justifyContent: 'center',
                                     color: grey[400]
                                 }}
-                            ><ExplorerIcon />
+                            ><InsertDriveFileOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Projects"} button disableRipple
+                        <ListItem key={"Moonshot"} button disableRipple
                             // selected={props.pageIndex === 1}
-                            onClick={() => navigate('/Projects', { replace: true })}
+                            onClick={() => navigate('/Moonshot', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -228,12 +241,14 @@ const MiniDrawer = (props) => {
                                     justifyContent: 'center',
                                     color: grey[400]
                                 }}
-                            ><ProjectsIcon />
+                            >
+                                {/* <ProjectsIcon /> */}
+                                <DarkModeOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Mail"} button disableRipple
+                        <ListItem key={"Culpa"} button disableRipple
                             // selected={props.pageIndex === 2}
-                            onClick={() => navigate('/Contacts', { replace: true })}
+                            onClick={() => navigate('/Culpa', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -246,18 +261,53 @@ const MiniDrawer = (props) => {
                                     justifyContent: 'center',
                                     color: grey[400]
                                 }}
-                            ><MailIcon />
+                            ><RateReviewOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
                         </ListItem>
-                        <ListItem key={"Account"} button disableRipple
-                            // selected={props.pageIndex === 3}
-                            onClick={() => navigate('/Account', { replace: true })}
+                        <ListItem key={"UberEats"} button disableRipple
+                            // selected={props.pageIndex === 2}
+                            onClick={() => navigate('/UberEats', { replace: true })}
+                            disablePadding sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }} >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                    color: grey[400]
+                                }}
+                            ><TakeoutDiningOutlinedIcon sx={{ fontSize: 26 }} />
+                            </ListItemIcon>
+                        </ListItem>
+                        <ListItem key={"Pokemon"} button disableRipple
+                            // selected={props.pageIndex === 2}
+                            onClick={() => navigate('/Pokemon', { replace: true })}
+                            disablePadding sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }} >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                    color: grey[400]
+                                }}
+                            ><CatchingPokemonOutlinedIcon sx={{ fontSize: 26 }} />
+                            </ListItemIcon>
+                        </ListItem>
+                        <ListItem key={"Contacts"} button disableRipple
+                            onClick={() => navigate('/Contacts', { replace: true })}
                             // onClick={(event) => handleListItemClick(event, 3)} 
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
-                                mt: '65vh'
+                                mt: '53vh'
                             }} >
                             <ListItemIcon
                                 sx={{
@@ -266,7 +316,7 @@ const MiniDrawer = (props) => {
                                     justifyContent: 'center',
                                     color: grey[400]
                                 }}
-                            ><AccountIcon />
+                            ><AccountCircleOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
                         </ListItem>
                     </List>
@@ -285,22 +335,22 @@ const MiniDrawer = (props) => {
                         <StyledTab label="Connections" value={2} />
                         <StyledTab label="Connections" value={3} />
                     </StyledTabs> */}
-                <Box sx={{ bgcolor: '#5b5b5b', mt: -2, position: "fixed", width: "100%" }}>
-                    <StyledSubTabs value={props.pageIndex}
-                        aria-label="ant example"
-                        style={{ height: "3.6rem" }}>
+                <StyledSubTabs value={props.pageIndex}
+                    aria-label="ant example"
+                    style={{ height: "3.6rem" }}
+                    sx={{ bgcolor: '#5b5b5b', mt: -2.1, position: "fixed", width: "100%" }}>
 
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Home.jsx</span>} value={0} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Project.md</span>} value={1} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Contact.css</span>} value={2} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<HtmlIcon />} onClick={() => navigate('/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;About.html</span>} value={3} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Moonshot', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Moonshot.js</span>} value={4} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Culpa', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Culpa.js</span>} value={5} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/UberEats', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;UberEats.js</span>} value={6} />
-                        <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Pokemon', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Pokemon.js</span>} value={7} />
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/', { replace: true })} icon={<ReactIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Home.jsx</span>} value={0} />
+                    {/* <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple onClick={() => navigate('/Projects', { replace: true })} icon={<MdIcon />} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Project.md</span>} value={1} /> */}
+                    {/* <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<HtmlIcon />} onClick={() => navigate('/Account', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;About.html</span>} value={3} /> */}
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Moonshot', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Moonshot.js</span>} value={1} />
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Culpa', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Culpa.js</span>} value={2} />
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/UberEats', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;UberEats.js</span>} value={3} />
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Pokemon', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Pokemon.js</span>} value={4} />
+                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Contact.css</span>} value={5} />
 
-                    </StyledSubTabs>
-                </Box>
+
+                </StyledSubTabs>
                 {/* <Box  /> */}
                 <Box sx={{ pt: 8, pl: 3, pr: 3 }}>
                     <props.component />

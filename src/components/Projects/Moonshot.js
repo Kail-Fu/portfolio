@@ -213,7 +213,7 @@ const MoonshotBox = (props) => {
 };
 
 const Moonshot = () => {
-    return <MiniDrawer pageIndex={4} component={MoonshotBox} />
+    return <MiniDrawer pageIndex={1} component={MoonshotBox} />
 }
 
 export default Moonshot;

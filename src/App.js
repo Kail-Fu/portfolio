@@ -61,13 +61,12 @@ const App = () => {
         <Routes>
           {/* <Route path="/" element={<Navigate replace to="/portfolio" />} /> */}
           <Route path="/" element={<Explorer />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contacts" element={<Contacts />} />
-          <Route path="/Account" element={<Account />} />
           <Route path="/Moonshot" element={<Moonshot />} />
           <Route path="/Culpa" element={<Culpa />} />
           <Route path="/UberEats" element={<UberEats />} />
           <Route path="/Pokemon" element={<Pokemon />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Account" element={<Account />} />
         </Routes>
       </HashRouter>
     </div>
