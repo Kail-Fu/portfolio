@@ -61,9 +61,9 @@ const ExplorerBox = (props) => {
     }, [subIndex, index, reverse]);
 
 
-    return <Stack direction="column" spacing={1} mt={1} ml={8} mr={8}>
+    return <Stack direction="column" spacing={1} mt={1}>
         <Box textAlign={'left'} mb={4}>
-            <h1 style={{ color: grey[300], fontSize: "8rem" }}>Cool Raven</h1>
+            <h1 style={{ color: grey[300], fontSize: "8rem" }}>Kail Fu</h1>
             <h2 style={{ color: grey[300] }}>
                 I am a {`${words[index].substring(0, subIndex)}${""}`}
             </h2>

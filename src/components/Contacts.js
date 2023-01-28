@@ -19,10 +19,10 @@ const ContactsBox = () => {
     return <div>
         <Box pt={1} pl={40} pr={40} pb={6}>
             <Typography variant="h3" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="1rem">
-                Hi there, I'm coolraven222!
+                Hi there! I'm Kail
             </Typography>
             <Typography variant='h5' color={grey[300]}>
-                Welcome! I'm an incoming Product Manager at Uber, reimagining
+                An incoming Product Manager at Uber, reimagining
                 how humans could go anywhere, get anything.
             </Typography>
         </Box>

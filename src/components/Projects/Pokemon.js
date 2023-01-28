@@ -55,7 +55,7 @@ const PokemonBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>It is my first React project! Check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/dev/'>
+                            <li>It is my first React project! Check it out <a target="_blank" rel="noopener noreferrer" href='https://kail-fu.github.io/dev/'>
                                 here</a>.</li>
                             <li>After this project, I fell in love with React. This portfolio, as you might expect, is also made by React {":)"}</li>
                         </ul>
@@ -130,15 +130,15 @@ const PokemonBox = (props) => {
                 I applied the knowledge to the portfolio you are looking at. Each project page is composed of one
                 title component and multiple content components. It not only saves my time but also makes the style consistent.
             </Typography>
-            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
+            {/* <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
                 Moreover, I learned many useful React libraries, including Bootstrap and Material UI.
                 For example, I imported the "Contact Me" button belowfrom Material UI. Click to see how it works {";)"}
-            </Typography>
+            </Typography> */}
         </div>
 
-        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+        {/* <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
             Contact Me
-        </Button></Box>
+        </Button></Box> */}
     </div>
 
 };

@@ -171,9 +171,9 @@ const MoonshotBox = (props) => {
             </Typography>
         </div>
 
-        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+        {/* <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
             Contact Me
-        </Button></Box>
+        </Button></Box> */}
     </div >
 
 

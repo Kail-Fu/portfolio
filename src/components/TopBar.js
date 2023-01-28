@@ -14,16 +14,16 @@ function TopBar() {
     return (
         <Navbar bg="dark" sticky="top">
             <Nav className="me-auto">
-                <Nav.Item style={{ leftMargin: "20px" }}> <img
+                {/* <Nav.Item style={{ marginLeft: 10 }}> <img
                     src={vslogo}
                     width="22"
                     height="22"
                     className="d-inline-block align-top"
                     alt="VS Code logo"
-                /></Nav.Item>
-                <Nav.Item button onClick={() => navigate('/', { replace: true })}>Home</Nav.Item>
-                <Nav.Item button onClick={() => navigate('/Contacts', { replace: true })}>Contact</Nav.Item>
-                <Nav.Item style={{ marginLeft: '33vw' }}>VSCode Emulator - Cool Raven</Nav.Item>
+                /></Nav.Item> */}
+                {/* <Nav.Item button onClick={() => navigate('/', { replace: true })}>Home</Nav.Item> */}
+                {/* <Nav.Item button onClick={() => navigate('/Contacts', { replace: true })}>Contact</Nav.Item> */}
+                <Nav.Item style={{ marginLeft: '47vw' }}>VSCode Emulator - Kail Fu</Nav.Item>
             </Nav>
             <CircleIcon className='circleicon' sx={{ color: grey[500], fontSize: 16 }} />
             <CircleIcon className='circleicon' sx={{ color: grey[500], fontSize: 16 }} />

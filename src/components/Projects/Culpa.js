@@ -59,7 +59,7 @@ const CulpaBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>Redesign Columbia students' professor review site for usability and accessibility. Check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
+                            <li>Redesign Columbia students' professor review site for usability and accessibility. Check it out <a target="_blank" rel="noopener noreferrer" href='https://kail-fu.github.io//new-culpa/'>
                                 here</a>!  </li>
                             <li>Just 1 month after the project, Columbia updated its interface due to students' complaints.
                                 The new website solved many of the problems I identified, including what a "gold nugget" professor means.</li>
@@ -142,7 +142,7 @@ const CulpaBox = (props) => {
                 </Stack>
             </Stack>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Following the hi-fi prototype, I created a sample page for the new CULPA. Feel free to check it out <a target="_blank" rel="noopener noreferrer" href='https://coolraven222.github.io/new-culpa/'>
+                Following the hi-fi prototype, I created a sample page for the new CULPA. Feel free to check it out <a target="_blank" rel="noopener noreferrer" href='https://kail-fu.github.io/new-culpa/'>
                     here</a>.
             </Typography>
 
@@ -165,9 +165,9 @@ const CulpaBox = (props) => {
             </Typography>
         </div>
 
-        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+        {/* <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
             Contact Me
-        </Button></Box>
+        </Button></Box> */}
     </div>
 
 };

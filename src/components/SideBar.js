@@ -122,7 +122,6 @@ const ListItem = withStyles({
 })(MuiListItem);
 
 
-
 const MiniDrawer = (props) => {
     const navigate = useNavigate();
     const [open, setOpen] = React.useState(false);
@@ -131,16 +130,16 @@ const MiniDrawer = (props) => {
     return (
         <Box sx={{ display: 'flex', minHeight: "100vh", minWidth: "100vw", backgroundColor: "#222222" }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open} elevation={0}>
+            {/* <AppBar position="fixed" open={open} elevation={0}>
                 <TopBar></TopBar>
-            </AppBar>
-            <Drawer variant="permanent" open={open} PaperProps={{
+            </AppBar> */}
+            {/* <Drawer variant="permanent" open={open} PaperProps={{
                 sx: {
                     backgroundColor: '#383838'
                 }
             }}>
                 <div className={classes.root}>
-                    <List sx={{ pt: 5 }} component="nav" aria-label="main mailbox folders">
+                    <List sx={{ pt: 0.5 }} component="nav" aria-label="main mailbox folders">
                         <ListItem key={"Explorer"} button disableRipple
                             onClick={() => navigate('/', { replace: true })}
                             disablePadding sx={{
@@ -227,14 +226,14 @@ const MiniDrawer = (props) => {
                                 }}
                             ><CatchingPokemonOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
-                        </ListItem>
-                        <ListItem key={"Contacts"} button disableRipple
+                        </ListItem> */}
+            {/* <ListItem key={"Contacts"} button disableRipple
                             onClick={() => navigate('/Contacts', { replace: true })}
                             disablePadding sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
-                                mt: '53vh'
+                                mt: '55vh'
                             }} >
                             <ListItemIcon
                                 sx={{
@@ -245,11 +244,11 @@ const MiniDrawer = (props) => {
                                 }}
                             ><AccountCircleOutlinedIcon sx={{ fontSize: 26 }} />
                             </ListItemIcon>
-                        </ListItem>
-                    </List>
+                        </ListItem> */}
+            {/* </List>
                 </div>
-            </Drawer>
-            <Box sx={{ flexGrow: 1, pt: 4 }}>
+            </Drawer> */}
+            <Box sx={{ flexGrow: 1, pt: 0.5 }}>
                 <StyledSubTabs value={props.pageIndex}
                     aria-label="ant example"
                     style={{ height: "3.6rem" }}
@@ -260,11 +259,11 @@ const MiniDrawer = (props) => {
                     <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Culpa', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Culpa.js</span>} value={2} />
                     <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/UberEats', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;UberEats.js</span>} value={3} />
                     <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<JsIcon />} onClick={() => navigate('/Pokemon', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Pokemon.js</span>} value={4} />
-                    <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Contact.css</span>} value={5} />
+                    {/* <Tab sx={{ borderRight: 0.75, borderColor: "black" }} disableRipple icon={<CssIcon />} onClick={() => navigate('/Contacts', { replace: true })} iconPosition="start" label={<span style={{ color: 'white', textTransform: "none" }}>&nbsp;Contact.css</span>} value={5} /> */}
 
 
                 </StyledSubTabs>
-                <Box sx={{ pt: 8, pl: 3, pr: 3 }}>
+                <Box sx={{ pt: 8, pl: 11, pr: 11 }}>
                     <props.component />
                 </Box>
             </Box>

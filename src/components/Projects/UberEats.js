@@ -52,9 +52,9 @@ const UberEatsBox = (props) => {
                     <Typography variant="h5" color={grey[300]} sx={{ fontWeight: 800 }} marginBottom="0.8rem">Highlights</Typography>
                     <Typography variant="h6" color={grey[300]}>
                         <ul>
-                            <li>This was the takehome assignment of <a target="_blank" rel="noopener noreferrer" href='https://www.uber.com/us/en/careers/apm/'>
-                                Uber APM</a>, one of the best Product Manager positions. It only hires 10 people each year.</li>
-                            <li>This one-week project helped me land an offer from 7000 applicants {";)"} </li>
+                            <li>This comes from my first PRD {"("}Product Requirements Document{")"}! </li>
+                            <li>This one-week project helped me land a <a target="_blank" rel="noopener noreferrer" href='https://www.uber.com/us/en/careers/apm/'>
+                                Uber APM</a> offer {";)"} </li>
                         </ul>
                     </Typography>
                 </Box>
@@ -66,14 +66,8 @@ const UberEatsBox = (props) => {
         <div className={styles.textBar}>
             <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Context</Typography>
             <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Being a product manager has long been my dream.
-                On Aug 25, 2022, Uber invited me to take a one-week takehome assessment. The prompt is the following:
-            </Typography>
-
-            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem" pl={"3rem"} borderLeft={3}>
-                "You are a Product Manager tasked with improving the experience for couriers
-                delivering to apartments via Uber Eats. Please propose a product feature or improvement to an
-                existing feature."
+                Being a product manager has long been my dream. For this project, I imagine myself as a Product Manger tasked with improving the experience for couriers
+                delivering to apartments via Uber Eats.
             </Typography>
         </div>
 
@@ -173,19 +167,9 @@ const UberEatsBox = (props) => {
             </Typography>
         </div>
 
-        <div className={styles.textBar}>
-            <Typography className={styles.subTitle} variant="h4" sx={{ fontWeight: 800 }} marginBottom="0.8rem">Conclusion</Typography>
-            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                Takehome assignment has long been a controversial topic. Some people argue that you might waste time on something that isn't guaranteed, not to mention providing the company with free solutions to their assignments. In contrast, others state that takehome assignment is your best friend to showcasing your professional skills.
-            </Typography>
-            <Typography variant='h6' color={grey[300]} marginBottom="0.8rem">
-                I enjoyed doing this assignment. First, it deepened my understanding of Uber's strategy, which greatly helped my following interviews. Second, it validated my idea of becoming a product manager. I never get tired of interviewing with couriers, brainstorming solutions, and designing metrics. After postponing one of my midterms and one lab meeting, I completed the assignment and submitted it on time. Luckily, it all paid off.
-            </Typography>
-        </div>
-
-        <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
+        {/* <Box mt={4}><Button onClick={() => navigate('/Contacts', { replace: true })} variant="contained" style={{ textTransform: "none", fontSize: '1.5rem' }} sx={{ mt: "1rem", mb: "2rem", fontWeight: 'bold' }}>
             Contact Me
-        </Button></Box>
+        </Button></Box> */}
     </div>
 
 };
